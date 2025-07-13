@@ -4,7 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
+
+
+
+        /* .roboto-<uniquifier> {
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        font-variation-settings:
+            "wdth" 100;
+        } */
+
+        @font-face {
+            font-family: goldplay;
+            font-weight: 500;
+            src: url(./src/fonts/Goldplay-Medium.otf);
+        }
+
+        .title-box {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .title-box h1 {
+             font-weight: 600; 
+             font-size: 46px; 
+             color: #72b0d4;
+             padding: 0;
+             margin: 0;
+        }
+        .title-box h2 {
+            font-size: 32px;
+            font-weight: 300;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .title-box h3 {
+            font-weight: 500;
+            font-family: 'goldplay', sans-serif;
+            font-size: 20px;
+            color: white;
+            margin-top: 16px;
+            padding-top: 0;
+        }
 
         .path {
             stroke-dasharray: 3000;
@@ -17,9 +68,10 @@
 
         .animation-holder {
             width: 495px;
+            height: 583px;
             overflow-x: hidden;
             position: absolute;
-            top:0px; 
+            top:10px; 
         }
 
         .lines-holder {
@@ -64,6 +116,7 @@
 </head>
 <body>
     <div class="animation-holder">
+
         <div class="lines-holder">
             <svg id="Layer_1" class="path" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 720 648">
                 <defs>
@@ -156,8 +209,15 @@
 
 
         </div>
-
+        <div class="title-box">
+            <h1>Future Aligned</h1>
+            <h2>A Platform for Partnership</h2>
+            <h3>2024/25 Annual Report</h3>
+        </div>
+    
     </div>
+
+    
 
 
 </body>
