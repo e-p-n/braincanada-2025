@@ -10,9 +10,11 @@
     --color-9: #cfc22a; /* green-yellow */
     --color-10: #8ad1d0; /* teal */
     --color-11: #f6c015; /* gold */
-    --color-12: #00AEEF;
+    --color-12: #F5F4F0; /* beige */
     --color-13: #F5F4F0;
     
+    --max-width: 460px;
+    --standard-padding: 4vw;
 
     /* --graph-move: 0.5s;
     --headline-delay: 0.5s;
@@ -31,6 +33,9 @@
 .gold {
     color: var(--color-11);
 }
+.light-blue {
+    color: var(--color-7);
+}
 
 *,
 *::before,
@@ -38,6 +43,10 @@
   box-sizing: border-box;
 }
 
+html {
+    font-size: 3.8vw;
+
+}
 
 body {
     margin: 0;
@@ -45,9 +54,56 @@ body {
     width: 100%;
     font-family: var(--sans);
 }
+
+sup {
+    vertical-align: super;
+    font-size: .6em;
+}
+
+h2 {
+    color: var(--color-1);
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 4rem;
+    margin: 4rem 0 0;
+    padding: 0;
+
+}
+
+h3 {
+    color: var(--color-1);
+    font-size: 1.8rem;
+    font-weight: 200;
+    padding: 0;
+    margin: 12px 0 0 0;
+}
+
+
+
+button.more-less {
+    text-decoration: none;
+    color: var(--color-5);
+    display: block;
+    margin: 1.5rem 0 0 0;
+    padding: 0;
+    width: fit-content;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: .95rem;
+}
+
+button.large-button {
+    font-size: 1em !important;
+    display: inline !important;
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid greenyellow; */
+}
+
 .site-container {
     width: 100vw;
-    max-width: 500px;
+    max-width: var(--max-width);
 }
 
 header {
@@ -66,7 +122,6 @@ header img {
 header p {
     font-weight: 800;
     color: white;
-    font-size: 14px;
     padding: 0;
     margin: 0;
 }
@@ -79,32 +134,31 @@ header p a {
 
 .title-box {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: var(--standard-padding);
+    left: var(--standard-padding);
+}
+.title-box h1 {
+    font-weight: 600; 
+    font-size: 2.5rem; 
+    color: var(--color-7);
+    padding: 0;
+    margin: 30px 0 3px;
 }
 
-.title-box h1 {
-        font-weight: 600; 
-        font-size: 46px; 
-        color: var(--color-7);
-        padding: 0;
-        margin: 0;
-}
 .title-box h2 {
-    font-size: 32px;
-    font-weight: 300;
-    color: white;
-    margin: 0;
-    padding: 0;
+font-size: 1.7rem;
+font-weight: 300;
+color: white;
+margin: 0;
+padding: 0;
 }
 
 .title-box h3 {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.2rem;
     color: white;
-    margin-top: 16px;
-    padding-top: 0;
 }
+
 
 .path {
     stroke-dasharray: 3000;
@@ -121,14 +175,14 @@ header p a {
 }    
 
 .animation-container {
-    max-width: 500px;
+    max-width: var(--max-width);
     overflow-x: hidden;
     margin-bottom: 60px;
 }
 
 .lines-container {
     width: 250vw;
-    max-width: 1250px;
+    max-width: calc(var(--max-width) * 2.5);
     position: relative;
     left:0;
     animation: pan 1.2s linear forwards 1;
@@ -165,22 +219,437 @@ header p a {
 
 .vision-mission {
     background-color: var(--color-1);
-    padding: 60px 20px 15rem;
+    padding: 60px var(--standard-padding) 15rem;
     color: white;
-    font-size: 1.8rem;
     font-weight: 200;
-    max-width: 500px;
+    max-width: var(--max-width);
 }
-.vision-mission h2{
-    font-size: 1.8rem;
+.vision-mission h2 {
     color:var(--color-8);
     font-weight: 200;
     margin: 0;
     padding: 0;
+    font-size:1.7rem
 }
 .vision-mission p {
     padding: 0;
     margin: 0 0 40px 0;
+    font-size: 1.7rem;
+}
+.message {
+    max-width: var(--max-width);
+    padding: var(--standard-padding);
+    font-weight: 300;
+    font-size: .92rem;
 }
 
 
+.message img {
+    width: 100%;
+}
+
+.message-box {
+    height: 0;
+    overflow: hidden;
+}
+.no-bottom-margin {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+.open {
+    height: auto !important;
+}
+
+.quote {
+    font-size: 1.13rem;
+    line-height: 1.2em;
+    font-weight: 300;
+    background-color: var(--color-1);
+    padding: var(--standard-padding);
+    max-width: var(--max-width);
+    height: 135vw;
+
+}
+
+.quote.chair {
+    color: var(--color-8);
+}
+.quote.ceo {
+    color: var(--color-11);
+}
+.quote-mark {
+    display: block;
+    font-size: 10.5rem;
+    font-weight: 600;
+    font-family: 'Arial Black', Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 6rem 0 2rem 0;
+}
+.quote-name-title {
+    color: white;
+}
+
+.yir {
+    max-width: var(--max-width);
+    padding: var(--standard-padding);
+    font-weight: 300;
+    font-size: .8rem;
+    background-color: white;
+}
+
+.yir-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.yir-content {
+    width: 80%;
+    flex-direction: column;
+}
+.yir-image {
+    width: 20%;
+    margin-top: .5em;
+    
+}
+.yir h4 {
+    font-size: 1rem;
+    display: block;
+    background-color: white;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+.yir-inputs h4 {
+    color: var(--color-7);
+}
+
+.yir-process h4 {
+    color: var(--color-10);
+}
+.yir-results h4 {
+    color: var(--color-4);
+}
+
+.yir-outputs h4 {
+    color: var(--color-8);
+}
+.yir-outcomes h4 {
+    color: var(--color-2);
+}
+
+
+.yir-stats {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+.yir-stats div {
+    flex-direction: column;
+    width: 33%;
+}
+
+
+.yir div p {
+    font-weight: 400;
+    display: block;
+    margin-right: 3vw;
+
+}
+.yir-number {
+    font-size: 1.2em;
+    font-weight: 700;
+    border-bottom: 3px solid var(--color-1); 
+    padding: 0;
+    margin: 2px;
+    display: inline-block;
+    width: 100%;    
+}
+.approach {
+    max-width: var(--max-width);
+    padding: var(--standard-padding);
+    font-weight: 300;
+    font-size: 1rem;
+    background-color: white;
+}
+
+
+.research {
+    max-width: var(--max-width);
+    padding: var(--standard-padding);
+    font-weight: 300;
+    font-size: 1rem;
+    background-color: var(--color-12);    
+}
+
+.research h2 {
+    margin-top: 0.5rem;
+    margin-bottom: .5rem;
+}
+
+.research h3 {
+    margin: .25rem 0; 
+}
+.research-section {
+    height: 3rem;
+    overflow: hidden;
+    border-top: 1px solid var(--color-1);
+    padding-bottom: 20px;;
+}
+.research-section-open {
+    height: auto;
+}
+.no-border {
+    border: none;
+}
+
+.research-section-content {
+    overflow: hidden;
+}
+
+.case-study {
+    height:0;
+    overflow: hidden;
+}
+
+
+.research-img {
+    width: 50%;
+    border-radius: 50%;
+    float: right;
+    margin-bottom: 20px;
+}
+.journey {
+    background-color: var(--color-1);
+    color: white;
+    max-width: var(--max-width);
+    padding: var(--standard-padding);
+    font-weight: 300;
+    font-size: 1rem;
+    overflow: hidden;
+}
+
+.journey h2, .journey h3, .journey h4 {
+    color: white;
+}
+
+.journey h4 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.journey p {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/***** CAROUSEL ******/
+
+.slider-wrapper {
+    display: flex;
+    width: 100%;
+    flex: 0 0 auto;
+    overflow: visible;
+    padding: 35px 0 7px;
+    margin-top: 35px;   
+}
+.slider-wrapper.fr {
+    height: 140px;
+}
+.slider-nm {
+    margin-top: 20px !important; 
+    padding-top: 0 !important;
+}   
+.slider-wrapper .animation-item {
+    display: flex;
+    flex: 0 0 auto; 
+    padding-bottom: 10px;
+    transition: 2s;
+}
+  
+.slider-wrapper .animation-item p {
+    display: block !important;
+}
+.slider-wrapper .animation-item.anim-padding {
+    padding-left: 80px;
+}
+.slider-wrapper .animation-item.animate {
+    animation: moveSlideshow 60s linear infinite;
+    animation-delay: 1s;
+}
+.slider-wrapper .animation-item:hover {
+    animation-play-state: paused;
+}
+@keyframes moveSlideshow {
+    100% { 
+        transform: translateX(-70%);  
+    }
+}
+.items-holder {
+    display: flex;
+    flex-direction: column;
+}
+.items-holder img {
+    margin-top: 20px;;
+    width: 98%;
+}
+.items {
+    display: flex !important;
+    flex-direction: row;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+.item {
+    display: block;
+    text-align: left;
+    padding: 0 10px 0 20px;
+    border-right: solid 1px white;
+    min-width: 300px;
+    max-width: 300px;
+    max-height: 120px;
+}
+.item.long {
+    min-width: 325px !important;
+    max-width: 325px !important;
+}
+
+.item p {
+    padding-top: 0;
+    margin-top: 0;
+    display: block;
+    border-bottom: none !important;
+}
+.item h3 {
+    font-size: 15px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.donors {
+    max-width: var(--max-width);
+    padding: var(--standard-padding);
+    font-weight: 300;
+    font-size: 1rem;
+    background-color: var(--color-12);
+
+}
+
+.donors h4 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.donor-list {
+    height: 0;
+    overflow: hidden;
+}
+
+.hidden-list {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+}
+
+.donor-quote {
+    font-size: 1.13rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    color: var(--color-4);
+
+
+}
+
+.donor-quote-name-title {
+    color: var(--color-1);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.financials {
+    max-width: var(--max-width);
+    padding: var(--standard-padding);
+    font-weight: 300;
+    font-size: 1rem;
+    background: url(../img/arrows-back.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 200px;
+
+
+}
+
+
+footer {
+    max-width: var(--max-width);
+    padding: var(--standard-padding);
+    font-weight: 300;
+    font-size: 1rem;
+    background-color: var(--color-1);
+    color: white;
+}
+
+footer img {
+    width: 10rem;
+    margin-bottom: 25px;
+}
+
+footer h2 {
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+
+footer a {
+    text-decoration: underline;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+footer h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.social img {
+    width: 1.7rem;
+    margin: 1rem 0 0 5px;
+}
+.copyright {
+    font-size: .8em;
+    margin-top: 3.5em;
+}
+
+
+
+@media only screen and (min-width:500px) {
+    :root {
+        --standard-padding:20px;
+    }
+
+    html {
+        font-size: 15px;
+    }
+
+    .quote {
+        height: 506px;
+    }
+
+}
+/* .yir {
+    background-color: var(--color-12);
+} */
