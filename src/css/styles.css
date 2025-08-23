@@ -59,7 +59,9 @@ sup {
     vertical-align: super;
     font-size: .6em;
 }
-
+.hide-narrow {
+    display: none;
+}
 h2 {
     color: var(--color-1);
     font-weight: bold;
@@ -584,8 +586,6 @@ padding: 0;
     background-repeat: no-repeat;
     background-position: bottom;
     padding-bottom: 200px;
-
-
 }
 
 
@@ -650,6 +650,106 @@ footer h3 {
     }
 
 }
+
+@media only screen and (min-width:800px) {
+    :root {
+        --max-width: 1024px;
+        --standard-padding: 60px;  
+    }
+    .site-container {
+        margin: 0 auto;
+        width: 100%;
+        overflow: hidden;
+    }
+    .animation-container {
+        width: 100%;
+        max-width: 1024px;
+        background-color: var(--color-1);
+        padding: 0 60px;
+    }
+    .wide-content {
+        padding-right: 35%;
+    }
+    /* .message-box {
+        outline: 1px solid pink;
+    } */
+    .message-box img {
+        width: 45%;
+
+    }
+    .bottom {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 40px 20% 0 0;
+
+    }
+    .message-close {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .case-study {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .case-study div {
+        width: 65%;
+    }
+    .case-study img {
+        width: 25%;
+        height: 25%;
+        margin: 60px 60px 20px;
+    }
+    .hide-wide {
+        display: none !important;
+    }
+    .donor-list {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+}
+    .donor-list div {
+        width: 48%;
+    }
+    .hide-narrow {
+        display: block !important;
+    }
+    .donor-quote {
+        width: 100% !important;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:flex-end;
+        margin-top: 0 !important;
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+    footer div {
+        width: 46%;
+    }
+
+    .column1 h2 {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    footer .column1 img {
+        margin: 25px 0 0;
+        padding: 0;
+    }
+
+
+
+
+}
+
+
 /* .yir {
     background-color: var(--color-12);
 } */
