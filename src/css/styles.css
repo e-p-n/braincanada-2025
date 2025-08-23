@@ -288,7 +288,6 @@ padding: 0;
     font-weight: 600;
     font-family: 'Arial Black', Arial, Helvetica, sans-serif;
     padding: 0;
-    margin: 6rem 0 2rem 0;
 }
 .quote-name-title {
     color: white;
@@ -859,7 +858,127 @@ footer h3 {
         margin: 25px 0 0;
         padding: 0;
     }
+    .approach-diagram {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 50px;
+        /* outline: 1px solid green; */
 
+    }
+
+
+
+    .approach-heading, .approach-footer {
+        margin: 240px 0 !important;
+    }
+
+    .approach-heading {
+        color: var(--color-13);
+        background-color: white;
+    }
+    .approach-footer {
+        color: white;
+        background-color: var(--color-13);
+        padding-top: 5px;
+        margin-top: 20px;
+    }
+
+
+    .approach-diagram-content {
+
+        margin: 0 30px 0 0;
+        width: 700px;
+        font-size: 14px;
+
+        height: 567px;
+        /* outline: 1px solid red; */
+    }
+
+    .approach-diagram-content img {
+        width: auto;
+    }
+    .disease, .indig, .corp, .inst, .found, .nation, .prov, .pharma, .stake, .eco {
+        position: relative;
+        display: inline-block;
+    } 
+    .disease {
+        bottom: 87px;
+        left: 190px;
+    }
+    .indig {
+        bottom: 153px;
+        left: -105px;  
+    }
+    .corp {
+        bottom: 211px;
+        text-align: left;
+        left: -105px;
+
+    }
+    .inst {
+        bottom: 258px;
+        text-align: left;
+        left: -410px;  
+    } 
+    .found {
+        bottom: 315px;
+        text-align: left;
+        left: -368px;  
+    }
+    .nation {
+        bottom: 480px;
+        left: 80px;  
+    } 
+    .prov {
+        bottom: 544px;
+        left: -120px;  
+    } 
+    .pharma {
+        bottom: 608px;
+        text-align: left;
+        left: -25px;
+    }
+    .stake {
+        bottom: 662px;
+        text-align: left;
+        left: -166px;
+    }
+    .eco {
+        bottom: 721px;
+        text-align: left;
+        left: -165px;
+    }
+
+
+    .approach-arrow {
+        top: -431px;
+        left: 128px;
+        rotate: -90deg;
+
+    }
+    
+
+
+    .yir {
+        background-color: var(--color-12);
+    }
+
+    .yir h4 {
+        font-size: 1.7rem;
+
+        margin-top: 31px;
+        margin-bottom: 0;
+        padding: 9px;
+    }
+
+    .yir div p {
+        font-size: 2em;
+    }
+
+    .yir-number {
+        border-bottom: 5px solid black;
+    }
 
 
 
