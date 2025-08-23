@@ -897,7 +897,7 @@ footer h3 {
 
 
     .approach-heading, .approach-footer {
-        margin: 240px 0 !important;
+        margin: 225px 0 !important;
     }
 
     .approach-heading {
@@ -915,8 +915,9 @@ footer h3 {
     .approach-diagram-content {
 
         margin: 0 30px 0 0;
-        width: 700px;
+        width: 660px;
         font-size: 14px;
+        line-height: 1.1em;
 
         height: 567px;
         /* outline: 1px solid red; */
@@ -930,57 +931,57 @@ footer h3 {
         display: inline-block;
     } 
     .disease {
-        bottom: 95px;
-        left: 190px;
+        bottom: 85px;
+        left: 170px;
     }
     .indig {
-        bottom: 153px;
-        left: -105px;  
+        bottom: 143px;
+        left: -115px;  
     }
     .corp {
-        bottom: 216px;
+        bottom: 199px;
         text-align: left;
-        left: -105px;
+        left: -120px;
 
     }
     .inst {
-        bottom: 258px;
+        bottom: 245px;
         text-align: left;
-        left: -410px;  
+        left: -415px;  
     } 
     .found {
-        bottom: 315px;
+        bottom: 300px;
         text-align: left;
-        left: -368px;  
+        left: -378px;  
     }
     .nation {
-        bottom: 490px;
-        left: 80px;  
+        bottom: 458px;
+        left: 70px;  
     } 
     .prov {
-        bottom: 554px;
-        left: -120px;  
+        bottom: 514px;
+        left: -125px;  
     } 
     .pharma {
-        bottom: 622px;
+        bottom: 575px;
         text-align: left;
-        left: -25px;
+        left: -42px;
     }
     .stake {
-        bottom: 676px;
+        bottom: 626px;
         text-align: left;
-        left: -166px;
+        left: -182px;
     }
     .eco {
-        bottom: 736px;
+        bottom: 681px;
         text-align: left;
-        left: -165px;
+        left: -185px;
     }
 
 
     .approach-arrow {
-        top: -445px;
-        left: 128px;
+        top: -407px;
+        left: 92px;
         rotate: -90deg;
 
     }
