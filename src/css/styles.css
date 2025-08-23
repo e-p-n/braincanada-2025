@@ -11,10 +11,10 @@
     --color-10: #8ad1d0; /* teal */
     --color-11: #f6c015; /* gold */
     --color-12: #F5F4F0; /* beige */
-    --color-13: #F5F4F0;
+    --color-13: #2bace2; /* lightblue2 */
     
     --max-width: 460px;
-    --standard-padding: 4vw;
+    --standard-padding: 1rem;
 
     /* --graph-move: 0.5s;
     --headline-delay: 0.5s;
@@ -104,7 +104,7 @@ button.large-button {
 }
 
 .site-container {
-    width: 100vw;
+    width: 100dvw;
     max-width: var(--max-width);
 }
 
@@ -240,7 +240,7 @@ padding: 0;
 }
 .message {
     max-width: var(--max-width);
-    padding: var(--standard-padding);
+    padding: var(--standard-padding) var(--standard-padding) calc(var(--standard-padding) *2);
     font-weight: 300;
     font-size: .92rem;
 }
@@ -248,6 +248,7 @@ padding: 0;
 
 .message img {
     width: 100%;
+    margin: var(--standard-padding) 0;
 }
 
 .message-box {
@@ -372,20 +373,128 @@ padding: 0;
 }
 .approach {
     max-width: var(--max-width);
-    padding: var(--standard-padding);
+    padding: var(--standard-padding) var(--standard-padding) calc(var(--standard-padding) *2);
     font-weight: 300;
     font-size: 1rem;
     background-color: white;
 }
 
+.approach-heading, .approach-footer {
+    border: 5px  var(--color-13) solid;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+}
+.approach-heading {
+    color: var(--color-13);
+    background-color: white;
+}
+.approach-footer {
+    color: white;
+    background-color: var(--color-13);
+    padding-top: 5px;
+    margin-top: 20px;
+}
+
+.approach-diagram-content {
+    position: relative;
+    top: -1px;
+    font-size: 10px;
+    width: 340px;
+    margin: 0 auto;
+    text-align: left;
+    height: 400px;
+    overflow: hidden;
+}
+
+.approach-diagram-content img {
+    width: 340px;
+}
+.disease, .indig, .corp, .inst, .found, .nation, .prov, .pharma, .stake, .eco {
+    position: relative;
+    display: inline-block;
+} 
+.disease {
+    bottom: 327px;
+    text-align: left;
+    left: 230px;
+}
+.indig {
+    bottom: 236px;
+    text-align: left;
+    left: 195px;  
+}
+.corp {
+    bottom: 314px;
+    text-align: right;
+    left: -120px;
+
+}
+.inst {
+    bottom: 364px;
+    text-align: right;
+    left: -183px;  
+} 
+.found {
+    bottom: 437px;
+    text-align: right;
+    left: 94px;  
+}
+.nation {
+    bottom: 405px;
+    text-align: left;
+    left: 142px;  
+} 
+.prov {
+    bottom: 335px;
+    text-align: left;
+    left: 109px;  
+} 
+.pharma {
+    bottom: 290px;
+    text-align: right;
+    left: -241px;
+}
+.stake {
+    bottom: 329px;
+    text-align: right;
+    left: -270px;
+}
+.eco {
+    bottom: 170px;
+    text-align: right;
+    left: 215px;
+}
+
+
+.approach-arrow {
+    width: 25px !important;
+    position: relative;
+    top: -114px;
+    left: 40px;
+
+}
+
+
+
+
+
 
 .research {
     max-width: var(--max-width);
-    padding: var(--standard-padding);
+    padding: var(--standard-padding) var(--standard-padding) calc(var(--standard-padding) *2);
     font-weight: 300;
     font-size: 1rem;
-    background-color: var(--color-12);    
+    background-color: var(--color-12); 
 }
+
 
 .research h2 {
     margin-top: 0.5rem;
@@ -415,6 +524,7 @@ padding: 0;
 .case-study {
     height:0;
     overflow: hidden;
+    margin-top: var(--standard-padding);
 }
 
 
@@ -534,7 +644,7 @@ padding: 0;
 
 .donors {
     max-width: var(--max-width);
-    padding: var(--standard-padding);
+    padding: var(--standard-padding) var(--standard-padding) calc(var(--standard-padding) *2);
     font-weight: 300;
     font-size: 1rem;
     background-color: var(--color-12);
@@ -565,7 +675,10 @@ padding: 0;
 
 
 }
-
+.donor-button {
+    margin: 3rem 0 5rem 0 !important;
+    letter-spacing: -.01rem;
+}
 .donor-quote-name-title {
     color: var(--color-1);
     font-size: 1rem;
@@ -586,6 +699,7 @@ padding: 0;
     background-repeat: no-repeat;
     background-position: bottom;
     padding-bottom: 200px;
+    margin-bottom: var(--standard-padding);
 }
 
 
