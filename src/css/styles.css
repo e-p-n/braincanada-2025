@@ -92,7 +92,7 @@ h3 {
 
 button.more-less {
     text-decoration: none;
-    color: var(--color-5);
+    color: #0047bb;
     display: block;
     margin: 1.5rem 0 0 0;
     padding: 0;
@@ -276,8 +276,8 @@ padding: 0;
 }
 
 .quote {
-    font-size: 1.13rem;
-    line-height: 1.2em;
+    font-size: 1.2rem;
+    line-height: 1.4em;
     font-weight: 700;
     background-color: var(--color-1);
     padding: var(--standard-padding);
@@ -303,6 +303,8 @@ padding: 0;
 .quote-name-title {
     color: white;
     font-weight: 400;
+    font-size: .86em;
+
 }
 
 .yir {
@@ -776,9 +778,17 @@ footer h3 {
     h1, h2, h3, h4 {
         line-height: 1.2em;
     } 
+    h2 {
+        margin-bottom: 5px;
+
+    }
+    h3 {
+        margin-top: 0;
+    }
 
     .quote {
-        height: 506px;
+        height: 450px;
+        padding-top: 55px;
     }
 
 }
@@ -786,7 +796,7 @@ footer h3 {
 @media only screen and (min-width:800px) {
     :root {
         --max-width: 1024px;
-        --standard-padding: 60px;  
+        --standard-padding: 80px;  
     }
     .site-container {
         margin: 0 auto;
@@ -920,7 +930,7 @@ footer h3 {
         display: inline-block;
     } 
     .disease {
-        bottom: 87px;
+        bottom: 95px;
         left: 190px;
     }
     .indig {
@@ -928,7 +938,7 @@ footer h3 {
         left: -105px;  
     }
     .corp {
-        bottom: 211px;
+        bottom: 216px;
         text-align: left;
         left: -105px;
 
@@ -944,32 +954,32 @@ footer h3 {
         left: -368px;  
     }
     .nation {
-        bottom: 480px;
+        bottom: 490px;
         left: 80px;  
     } 
     .prov {
-        bottom: 544px;
+        bottom: 554px;
         left: -120px;  
     } 
     .pharma {
-        bottom: 608px;
+        bottom: 622px;
         text-align: left;
         left: -25px;
     }
     .stake {
-        bottom: 662px;
+        bottom: 676px;
         text-align: left;
         left: -166px;
     }
     .eco {
-        bottom: 721px;
+        bottom: 736px;
         text-align: left;
         left: -165px;
     }
 
 
     .approach-arrow {
-        top: -431px;
+        top: -445px;
         left: 128px;
         rotate: -90deg;
 
@@ -1016,6 +1026,8 @@ footer h3 {
         position: relative;
         left: -51px;
     }
+
+
 
 
 }
