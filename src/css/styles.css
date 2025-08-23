@@ -523,11 +523,9 @@ padding: 0;
     height: 3rem;
     overflow: hidden;
     border-top: 1px solid var(--color-1);
-    padding-bottom: 20px;;
+    /* padding-bottom: 40px; */
 }
-.research-section-open {
-    height: auto;
-}
+
 .no-border {
     border: none;
 }
@@ -539,7 +537,6 @@ padding: 0;
 .case-study {
     height:0;
     overflow: hidden;
-    margin-top: var(--standard-padding);
 }
 
 
@@ -824,7 +821,10 @@ footer h3 {
         flex-direction: row-reverse;
         justify-content: space-between;
         padding: 40px 20% 0 0;
+    }
 
+    button.more-less {
+        margin-bottom: 30px;
     }
     .message-close {
         padding-top: 0;
@@ -835,6 +835,7 @@ footer h3 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom: 30px;
     }
     .case-study div {
         width: 65%;
@@ -842,7 +843,7 @@ footer h3 {
     .case-study img {
         width: 25%;
         height: 25%;
-        margin: 60px 60px 20px;
+        margin: 0 60px 20px;
     }
     .hide-wide {
         display: none !important;
@@ -1012,6 +1013,7 @@ footer h3 {
     .research {
         padding-bottom: 40px !important;
     }
+
 
     .donors li {
         line-height: 1.2em;
