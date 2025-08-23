@@ -24,6 +24,14 @@
     --sans: "Roboto", Arial, Helvetica, sans-serif;
     /* --slab: "Roboto Slab", sans-serif; */
 }
+
+a, a:visited {
+    color: #0047bb;
+}
+a:hover {
+    text-decoration: none;
+}
+
 .green-yellow {
     color: var(--color-9);
 }
@@ -231,12 +239,14 @@ padding: 0;
     font-weight: 200;
     margin: 0;
     padding: 0;
-    font-size:1.7rem
+    font-size:1.7rem;    
+    line-height: 1.2em;
 }
 .vision-mission p {
     padding: 0;
     margin: 0 0 40px 0;
     font-size: 1.7rem;
+    line-height: 1.2em;
 }
 .message {
     max-width: var(--max-width);
@@ -268,11 +278,12 @@ padding: 0;
 .quote {
     font-size: 1.13rem;
     line-height: 1.2em;
-    font-weight: 300;
+    font-weight: 700;
     background-color: var(--color-1);
     padding: var(--standard-padding);
     max-width: var(--max-width);
     height: 135vw;
+
 
 }
 
@@ -291,6 +302,7 @@ padding: 0;
 }
 .quote-name-title {
     color: white;
+    font-weight: 400;
 }
 
 .yir {
@@ -757,8 +769,13 @@ footer h3 {
     }
 
     html {
-        font-size: 15px;
+        font-size: 17px;
+        line-height: 1.2em;
     }
+
+    h1, h2, h3, h4 {
+        line-height: 1.2em;
+    } 
 
     .quote {
         height: 506px;
@@ -969,22 +986,37 @@ footer h3 {
 
         margin-top: 31px;
         margin-bottom: 0;
-        padding: 9px;
+        padding: 7px;
     }
 
     .yir div p {
-        font-size: 2em;
+        font-size: 1.8em;
+        line-height: 1.2em;
     }
 
     .yir-number {
         border-bottom: 5px solid black;
     }
 
+    .research {
+        padding-bottom: 40px !important;
+    }
+
+    .donors li {
+        line-height: 1.2em;
+        margin-bottom: 3px;
+    }
+    .financials {
+        background: url('../img/arrows-back-wide.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+    .yir-process, .yir-outputs {
+        position: relative;
+        left: -51px;
+    }
 
 
 }
 
-
-/* .yir {
-    background-color: var(--color-12);
-} */
