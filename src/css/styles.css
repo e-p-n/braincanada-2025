@@ -411,7 +411,9 @@ padding: 0;
     margin: 0 auto;
     text-align: left;
     height: 400px;
-    overflow: hidden;
+
+    font-weight: 400;
+    /* outline: 1px solid red; */
 }
 
 .approach-diagram-content img {
@@ -434,13 +436,13 @@ padding: 0;
 .corp {
     bottom: 314px;
     text-align: right;
-    left: -120px;
+    left: -123px;
 
 }
 .inst {
     bottom: 364px;
     text-align: right;
-    left: -183px;  
+    left: -188px;  
 } 
 .found {
     bottom: 437px;
@@ -455,17 +457,17 @@ padding: 0;
 .prov {
     bottom: 335px;
     text-align: left;
-    left: 109px;  
+    left: 107px;  
 } 
 .pharma {
     bottom: 290px;
     text-align: right;
-    left: -241px;
+    left: -243px;
 }
 .stake {
     bottom: 329px;
     text-align: right;
-    left: -270px;
+    left: -273px;
 }
 .eco {
     bottom: 170px;
@@ -478,7 +480,7 @@ padding: 0;
     width: 25px !important;
     position: relative;
     top: -114px;
-    left: 40px;
+    left: 38px;
 
 }
 
