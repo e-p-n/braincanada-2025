@@ -6,9 +6,9 @@ function showHide(id, size, text) {
     let more = text + " ▼";
     let less = text + " ▲";
     if (text === "More") {
-        let less = "Less ▲";
-    } elseif (text === "Plus") {
-        let less = "Moins ▲"
+        less = "Less ▲";
+    } else if (text === "Plus") {
+        less = "Moins ▲"
     }
 
     if (size === "large") {
@@ -147,7 +147,7 @@ graphObserver.observe(document.querySelector('.fi-graph'));
 eiObserver.observe(document.querySelector('#ei-info'));
 
 // const animations = document.querySelectorAll('.animation-item');
-animObserver.observe(document.querySelectorAll('.animation-item');
+animObserver.observe(document.querySelectorAll('.animation-item'));
 
 const infoBox = document.getElementById("info-box");
 infoBox.addEventListener("mouseover", mouseOverSlideUp);
