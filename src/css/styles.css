@@ -322,7 +322,8 @@ padding: 0;
 
 .yir-content {
     width: 80%;
-    flex-direction: column;
+    flex-direction: column;    
+
 }
 .yir-image {
     width: 20%;
@@ -435,66 +436,43 @@ padding: 0;
 .disease, .indig, .corp, .inst, .found, .nation, .prov, .pharma, .stake, .eco {
     position: relative;
     display: inline-block;
+    line-height: 1.1em;
 } 
 .disease {
-    bottom: 327px;
     text-align: left;
-    left: 230px;
 }
 .indig {
-    bottom: 236px;
     text-align: left;
-    left: 195px;  
 }
 .corp {
-    bottom: 314px;
     text-align: right;
-    left: -123px;
-
 }
 .inst {
-    bottom: 364px;
     text-align: right;
-    left: -188px;  
 } 
 .found {
-    bottom: 437px;
     text-align: right;
-    left: 94px;  
 }
 .nation {
-    bottom: 405px;
     text-align: left;
-    left: 142px;  
 } 
 .prov {
-    bottom: 335px;
     text-align: left;
-    left: 107px;  
 } 
 .pharma {
-    bottom: 290px;
     text-align: right;
-    left: -243px;
 }
 .stake {
-    bottom: 329px;
     text-align: right;
-    left: -273px;
 }
 .eco {
-    bottom: 170px;
     text-align: right;
-    left: 215px;
 }
 
 
 .approach-arrow {
     width: 25px !important;
     position: relative;
-    top: -114px;
-    left: 38px;
-
 }
 
 
@@ -807,17 +785,20 @@ footer h3 {
         padding: 0 60px;
     }
     @keyframes arrows {
-    to {
-        right: -152px
-    }
-}
+        to {
+            right: -152px
+        }
+    }   
 
     .arrows-container {
         position: relative;
         right: -1200px;
         margin: 200px 0 60px;
         animation: arrows 1.4s linear forwards 1;
+    }
 
+    .title-box h3 {
+        margin-top: 25px;
     }
 
 
@@ -869,7 +850,7 @@ footer h3 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-}
+    }
     .donor-list div {
         width: 48%;
     }
@@ -905,30 +886,54 @@ footer h3 {
     .approach-diagram {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content:space-between;
         margin-top: 50px;
+        position: relative;
+        left:0;
+        top: 0;
         /* outline: 1px solid green; */
 
     }
 
-
+    @keyframes app-head {
+        to {
+            opacity: 100;        
+        }   
+    }
 
     .approach-heading, .approach-footer {
         margin: 225px 0 !important;
+        opacity: 0;
+        animation: app-head 2s linear forwards 1;
+        z-index: 40;
+
     }
 
     .approach-heading {
         color: var(--color-13);
         background-color: white;
-    }
+}
     .approach-footer {
         color: white;
         background-color: var(--color-13);
         padding-top: 5px;
         margin-top: 20px;
+        animation-delay: 4s;
     }
 
 
+
+    .diagram-cover {
+        position: absolute;
+        width:800px;
+        height:800px;
+        background-color: white;
+        top:-4px;
+        right:12px;
+        animation: horiz 2.4s linear forwards 1;
+        animation-delay: 1.4s;
+
+    }
     .approach-diagram-content {
 
         margin: 0 30px 0 0;
@@ -937,6 +942,8 @@ footer h3 {
         line-height: 1.1em;
 
         height: 567px;
+
+
         /* outline: 1px solid red; */
     }
 
@@ -953,6 +960,9 @@ footer h3 {
 
     .yir {
         background-color: var(--color-12);
+        position: relative;
+        left: 0;
+        top: 0; 
     }
 
     .yir h4 {
@@ -970,6 +980,107 @@ footer h3 {
 
     .yir-number {
         border-bottom: 5px solid black;
+    }
+
+    @keyframes horiz {
+        to {
+            width: 1px;
+        }
+    }   
+    @keyframes vert {
+        to {
+            height: 1px;
+        }
+    }   
+    .inputs-cover-1 {
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        right: 0;
+        background-color: var(--color-12);
+        animation: horiz 1.6s linear forwards 1;
+    }
+    .inputs-cover-2 {
+        width: 100%;
+        height: 260px;
+        position: absolute;
+        right: 0;
+        background-color: var(--color-12);
+        animation: vert 1s linear forwards 1;
+        animation-delay: 1.3s;
+    }
+    .process-cover-1 {
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        left: 0;
+        background-color: var(--color-12);
+        animation: horiz 1.6s linear forwards 1;
+        animation-delay: 2.3s;
+    }
+    .process-cover-2 {
+        width: 100%;
+        height: 360px;
+        position: absolute;
+        right: 0;
+        background-color: var(--color-12);
+        animation: vert 1.2s linear forwards 1;
+        animation-delay: 3.8s;
+    }
+    .results-cover-1 {
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        right: 0;
+        background-color: var(--color-12);
+        animation: horiz 1.6s linear forwards 1;
+        animation-delay: 5s;
+    }
+    .results-cover-2 {
+        width: 100%;
+        height: 520px;
+        position: absolute;
+        right: 0;
+        background-color: var(--color-12);
+        animation: vert 1.4s linear forwards 1;
+        animation-delay: 6.3s;
+    }
+    .outputs-cover-1 {
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        left: 0;
+        background-color: var(--color-12);
+        animation: horiz 1.6s linear forwards 1;
+        animation-delay: 7.7s;
+    }
+    .outputs-cover-2 {
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        right: 0;
+        background-color: var(--color-12);
+        animation: vert 1s linear forwards 1;
+        animation-delay: 9.2s;
+    }
+
+    .outcomes-cover-1 {
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        right: 0;
+        background-color: var(--color-12);
+        animation: horiz 1.6s linear forwards 1;
+        animation-delay: 10.0s;
+    }
+    .outcomes-cover-2 {
+        width: 100%;
+        height: 555px;
+        position: absolute;
+        right: 0;
+        background-color: var(--color-12);
+        animation: vert 1.5s linear forwards 1;
+        animation-delay: 11.3s;
     }
 
     .research {
@@ -995,4 +1106,3 @@ footer h3 {
 
 
 }
-

@@ -2,6 +2,52 @@
     margin: 6rem 0 2rem 0;
 }
 
+.disease {
+    bottom: 331px;
+    left: 230px;
+}
+.indig {
+    bottom: 240px;
+    left: 195px;  
+}
+.corp {
+    bottom: 316px;
+    left: -123px;
+
+}
+.inst {
+    bottom: 366px;
+    left: -188px;  
+} 
+.found {
+    bottom: 439px;
+    left: 94px;  
+}
+.nation {
+    bottom: 407px;
+    left: 142px;  
+} 
+.prov {
+    bottom: 339px;
+    left: 107px;  
+} 
+.pharma {
+    bottom: 292px;
+    left: -243px;
+}
+.stake {
+    bottom: 331px;
+    left: -273px;
+}
+.eco {
+    bottom: 175px;
+    left: 215px;
+}
+.approach-arrow {
+    top: -117px;
+    left: 39px;
+}
+
 @media only screen and (min-width:1024px) {
     .quote-mark {
         margin: 0 0 25px 0;
@@ -66,4 +112,36 @@
         rotate: -90deg;
 
     }
+    .inputs-cover-1 {
+        top: 280px;
+    }
+    .inputs-cover-2 {
+        bottom: 2075px;
+    }
+    .process-cover-1 {
+        top: 592px;
+    }
+    .process-cover-2 {
+        bottom: 1660px;
+    }
+    .results-cover-1 {
+        top: 1010px;
+    }
+    .results-cover-2 {
+        bottom: 1082px;
+    }
+    .outputs-cover-1 {
+        top: 1588px;
+    }
+    .outputs-cover-2 {
+        bottom: 723px;
+    }
+
+    .outcomes-cover-1 {
+        top: 1946px;
+    }
+    .outcomes-cover-2 {
+        bottom: 110px;
+    }
+
 }
