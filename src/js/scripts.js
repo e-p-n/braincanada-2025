@@ -5,6 +5,12 @@ function showHide(id, size, text) {
     console.log("clicked");
     let more = text + " ▼";
     let less = text + " ▲";
+    if (text === "More") {
+        let less = "Less ▲";
+    } elseif (text === "Plus") {
+        let less = "Moins ▲"
+    }
+
     if (size === "large") {
         more = "▽";
         less = "△";
@@ -19,50 +25,6 @@ function showHide(id, size, text) {
         button.innerHTML = more;
         message.classList.remove("open");
     }
-    // if (size === "small") {
-
- 
-    
-
-    
-
-    // // let pic = document.getElementById(id+'-pic');
-    // let box = document.getElementById(id+'-box');
-    // // let columnClass = document.querySelector('.pp-'+id);
-    // let boxClass, buttonClass, hiddenClass
-
-    // if (id=="ceo") {
-    //     boxClass = "pp-column-extended";
-    //     buttonClass = " pp-padding"
-    //     hiddenClass = "pp-hidden-ceo" + classSuffix;
-    // } else {
-    //     boxClass = "pp-column-extended pp-margin"
-    //     buttonClass = "";
-    //     hiddenClass = "pp-hidden" + classSuffix;
-    // }
-    // if (message.className.indexOf("pp-show") == -1) {
-    //     message.classList.replace(hiddenClass, "pp-show")
-    //     pic.className += " pp-pic-pos"
-    //     box.className = box.className.replace("pp-column", boxClass);
-    //     if (id === "chair") {
-    //         columnClass.classList.add('added-border');
-    //     }
-        
-    //     button.className += buttonClass;
-    //     button.innerHTML = less;
-    // } else {
-    //     message.classList.replace("pp-show", hiddenClass);
-    //     box.className = box.className.replace(boxClass, "pp-column");
-    //     button.className = button.className.replace(buttonClass, "");
-    //     pic.className = pic.className.replace(" pp-pic-pos", "");
-    //     button.innerHTML = more;
-    //     url = location.href.split('#')[0];
-    //     url += '#' + id + '-box';
-    //     location.href = url;
-    //     if (id === "chair") {
-    //         columnClass.classList.remove('added-border');
-    //     }    
-    // }
 
 }
 
@@ -104,9 +66,10 @@ function mouseOverSlideDown(event) {
 const animObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting) {
-            entry.target.classList.remove('anim-padding');
+            console.log("triggered");
+            // entry.target.classList.remove('anim-padding');
             entry.target.classList.add('animate');
-            // console.log(entry.target.classList);
+            console.log(entry.target.classList);
         }
         
     })
@@ -183,10 +146,8 @@ const graphObserver = new IntersectionObserver(entries => {
 graphObserver.observe(document.querySelector('.fi-graph'));
 eiObserver.observe(document.querySelector('#ei-info'));
 
-const animations = document.querySelectorAll('.animation-item');
-animations.forEach (animation =>
-                   animObserver.observe(animation)
-);
+// const animations = document.querySelectorAll('.animation-item');
+animObserver.observe(document.querySelectorAll('.animation-item');
 
 const infoBox = document.getElementById("info-box");
 infoBox.addEventListener("mouseover", mouseOverSlideUp);
