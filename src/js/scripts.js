@@ -63,7 +63,7 @@ function mouseOverSlideDown(event) {
 
 // ANIMATION FOR MULTIPLE ITEMS
 
-const animObserver = new IntersectionObserver(entries => {
+const yirObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting) {
             console.log("triggered");
@@ -77,19 +77,19 @@ const animObserver = new IntersectionObserver(entries => {
 }
 )
 
-const eiObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if(entry.isIntersecting) {
-            let liTags = entry.target.children;
+// const yirObserver = new IntersectionObserver(entries => {
+//     entries.forEach(entry => {
+//         if(entry.isIntersecting) {
+//             let liTags = entry.target.children;
 
-            for(let i=0; i < liTags.length; i++) {
-                liTags[i].classList.add("animate");
+//             for(let i=0; i < liTags.length; i++) {
+//                 liTags[i].classList.add("animate");
 
-            }
+//             }
   
-        }
-    })
-})
+//         }
+//     })
+// })
 
 const ipObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -143,13 +143,14 @@ const graphObserver = new IntersectionObserver(entries => {
     );
   });
 
-graphObserver.observe(document.querySelector('.fi-graph'));
-eiObserver.observe(document.querySelector('#ei-info'));
+// graphObserver.observe(document.querySelector('.fi-graph'));
+yirObserver.observe(document.querySelector('.yir-covers'));
+yirObserver.observe(document.querySelector('.approach-diagram'));
 
 // const animations = document.querySelectorAll('.animation-item');
-animObserver.observe(document.querySelectorAll('.animation-item'));
+// animObserver.observe(document.querySelectorAll('.animation-item'));
 
-const infoBox = document.getElementById("info-box");
-infoBox.addEventListener("mouseover", mouseOverSlideUp);
-infoBox.addEventListener("mouseleave", mouseOverSlideDown);
+// const infoBox = document.getElementById("info-box");
+// infoBox.addEventListener("mouseover", mouseOverSlideUp);
+// infoBox.addEventListener("mouseleave", mouseOverSlideDown);
 

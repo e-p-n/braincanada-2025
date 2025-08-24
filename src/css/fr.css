@@ -1,7 +1,9 @@
 .quote-mark {
     margin: 2rem 0 6rem 0;
 }
-
+.quote {
+    height: 40rem;
+}
 .disease {
     bottom: 333px;
     left: 230px;
@@ -47,8 +49,19 @@
     top: -138px;
     left: -154px;
 }
+.fr-2ln {
+    height: 5rem;
+}
 
 @media only screen and (min-width:1024px) {
+
+    .fr-2ln {
+        height: 2.8rem;
+    }
+
+    .donor-quote .quote-mark {
+        margin-top: 120px !important;
+    }
 
     .quote-mark {
         margin: 0 0 80px 0;
@@ -108,13 +121,13 @@
 
 
     .approach-arrow {
-        top: -468px;
+        top: -466px;
         left: 368px;
         rotate: -90deg;
 
     }
     .inputs-cover-1 {
-        top: 282px;
+        top: 284px;
     }
     .inputs-cover-2 {
         bottom: 2080px;
@@ -123,25 +136,25 @@
         top: 594px;
     }
     .process-cover-2 {
-        bottom: 1668px;
+        bottom: 1670px;
     }
     .results-cover-1 {
         top: 1010px;
     }
     .results-cover-2 {
-        bottom: 1092px;
+        bottom: 1096px;
     }
     .outputs-cover-1 {
         top: 1588px;
     }
     .outputs-cover-2 {
-        bottom: 733px;
+        bottom: 737px;
     }
 
     .outcomes-cover-1 {
         top: 1956px;
     }
     .outcomes-cover-2 {
-        bottom: 110px;
+        bottom: 113px;
     }
 }

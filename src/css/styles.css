@@ -94,7 +94,7 @@ button.more-less {
     text-decoration: none;
     color: #0047bb;
     display: block;
-    margin: 1.5rem 0 0 0;
+    margin: 1.5rem 0;
     padding: 0;
     width: fit-content;
     background: none;
@@ -495,13 +495,13 @@ padding: 0;
 }
 
 .research h3 {
-    margin: .25rem 0; 
+    margin: .25rem 0;
+    font-size: 1.8rem; 
 }
 .research-section {
-    height: 3rem;
+    height: 2.8rem;
     overflow: hidden;
     border-top: 1px solid var(--color-1);
-    /* padding-bottom: 40px; */
 }
 
 .no-border {
@@ -743,6 +743,7 @@ footer h3 {
 @media only screen and (min-width:500px) {
     :root {
         --standard-padding:20px;
+        --anim-delay:.4s
     }
 
     html {
@@ -845,11 +846,16 @@ footer h3 {
     .hide-wide {
         display: none !important;
     }
+    .donors h4 {
+        margin-bottom: 3px;
+    }
+
     .donor-list {
         height: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-top: 27px;
     }
     .donor-list div {
         width: 48%;
@@ -904,21 +910,27 @@ footer h3 {
     .approach-heading, .approach-footer {
         margin: 225px 0 !important;
         opacity: 0;
-        animation: app-head 2s linear forwards 1;
-        z-index: 40;
-
     }
 
+    .animate .approach-heading, .animate .approach-footer {
+        animation: app-head 2s linear forwards 1;
+        z-index: 40;
+    }
     .approach-heading {
         color: var(--color-13);
         background-color: white;
-}
+    }
+    .animate .approach-heading {
+        animation-delay: var(--anim-delay);
+    }
     .approach-footer {
         color: white;
         background-color: var(--color-13);
         padding-top: 5px;
         margin-top: 20px;
-        animation-delay: 4s;
+    }
+    .animate .approach-footer {
+        animation-delay: calc(var(--anim-delay) + 4s);
     }
 
 
@@ -926,13 +938,14 @@ footer h3 {
     .diagram-cover {
         position: absolute;
         width:800px;
-        height:800px;
+        height:600px;
         background-color: white;
-        top:-4px;
+        top:-8px;
         right:12px;
+    }
+    .animate .diagram-cover {
         animation: horiz 2.4s linear forwards 1;
-        animation-delay: 1.4s;
-
+        animation-delay: calc(var(--anim-delay) + 1.4s);
     }
     .approach-diagram-content {
 
@@ -992,13 +1005,17 @@ footer h3 {
             height: 1px;
         }
     }   
+
+    .yir-cover {
+        z-index: 400;
+    }
     .inputs-cover-1 {
         width: 100%;
         height: 60px;
         position: absolute;
         right: 0;
         background-color: var(--color-12);
-        animation: horiz 1.6s linear forwards 1;
+        z-index: 400;
     }
     .inputs-cover-2 {
         width: 100%;
@@ -1006,8 +1023,7 @@ footer h3 {
         position: absolute;
         right: 0;
         background-color: var(--color-12);
-        animation: vert 1s linear forwards 1;
-        animation-delay: 1.3s;
+        z-index: 400;
     }
     .process-cover-1 {
         width: 100%;
@@ -1015,8 +1031,7 @@ footer h3 {
         position: absolute;
         left: 0;
         background-color: var(--color-12);
-        animation: horiz 1.6s linear forwards 1;
-        animation-delay: 2.3s;
+        z-index: 400;
     }
     .process-cover-2 {
         width: 100%;
@@ -1024,8 +1039,7 @@ footer h3 {
         position: absolute;
         right: 0;
         background-color: var(--color-12);
-        animation: vert 1.2s linear forwards 1;
-        animation-delay: 3.8s;
+        z-index: 400;
     }
     .results-cover-1 {
         width: 100%;
@@ -1033,8 +1047,7 @@ footer h3 {
         position: absolute;
         right: 0;
         background-color: var(--color-12);
-        animation: horiz 1.6s linear forwards 1;
-        animation-delay: 5s;
+        z-index: 400;
     }
     .results-cover-2 {
         width: 100%;
@@ -1042,8 +1055,7 @@ footer h3 {
         position: absolute;
         right: 0;
         background-color: var(--color-12);
-        animation: vert 1.4s linear forwards 1;
-        animation-delay: 6.3s;
+        z-index: 400;
     }
     .outputs-cover-1 {
         width: 100%;
@@ -1051,8 +1063,7 @@ footer h3 {
         position: absolute;
         left: 0;
         background-color: var(--color-12);
-        animation: horiz 1.6s linear forwards 1;
-        animation-delay: 7.7s;
+        z-index: 400;
     }
     .outputs-cover-2 {
         width: 100%;
@@ -1060,8 +1071,7 @@ footer h3 {
         position: absolute;
         right: 0;
         background-color: var(--color-12);
-        animation: vert 1s linear forwards 1;
-        animation-delay: 9.2s;
+        z-index: 400;
     }
 
     .outcomes-cover-1 {
@@ -1070,8 +1080,7 @@ footer h3 {
         position: absolute;
         right: 0;
         background-color: var(--color-12);
-        animation: horiz 1.6s linear forwards 1;
-        animation-delay: 10.0s;
+        z-index: 400;
     }
     .outcomes-cover-2 {
         width: 100%;
@@ -1079,10 +1088,50 @@ footer h3 {
         position: absolute;
         right: 0;
         background-color: var(--color-12);
-        animation: vert 1.5s linear forwards 1;
-        animation-delay: 11.3s;
+         z-index: 400;
+   }
+    .animate .inputs-cover-1 {
+        background-color: var(--color-12);
+        animation: horiz 1.6s linear forwards 1;
+        animation-delay: var(--anim-delay);
+    }
+    .animate .inputs-cover-2 {
+        animation: vert 1s linear forwards 1;
+        animation-delay: calc(var(--anim-delay) + 1.3s);
+    }
+    .animate .process-cover-1 {
+        animation: horiz 1.6s linear forwards 1;
+        animation-delay:  calc(var(--anim-delay) + 2.3s);
+    }
+    .animate .process-cover-2 {
+        animation: vert 1.2s linear forwards 1;
+        animation-delay:  calc(var(--anim-delay) + 3.8s);
+    }
+    .animate .results-cover-1 {
+        animation: horiz 1.6s linear forwards 1;
+        animation-delay:  calc(var(--anim-delay) + 5s);
+    }
+    .animate .results-cover-2 {
+        animation: vert 1.4s linear forwards 1;
+        animation-delay:  calc(var(--anim-delay) + 6.3s);
+    }
+    .animate .outputs-cover-1 {
+        animation: horiz 1.6s linear forwards 1;
+        animation-delay:  calc(var(--anim-delay) + 7.7s);
+    }
+    .animate .outputs-cover-2 {
+        animation: vert 1s linear forwards 1;
+        animation-delay:  calc(var(--anim-delay) + 9.2s);
     }
 
+    .animate .outcomes-cover-1 {
+        animation: horiz 1.6s linear forwards 1;
+        animation-delay:  calc(var(--anim-delay) + 10.0s);
+    }
+    .animate .outcomes-cover-2 {
+        animation: vert 1.5s linear forwards 1;
+        animation-delay:  calc(var(--anim-delay) + 11.3s);
+    }
     .research {
         padding-bottom: 40px !important;
     }
@@ -1092,6 +1141,7 @@ footer h3 {
         line-height: 1.2em;
         margin-bottom: 3px;
     }
+
     .financials {
         background: url('../img/arrows-back-wide.png');
         background-size: contain;

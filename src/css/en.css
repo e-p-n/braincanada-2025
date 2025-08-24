@@ -1,7 +1,9 @@
 .quote-mark {
     margin: 6rem 0 2rem 0;
 }
-
+.quote {
+    height: 35rem;
+}
 .disease {
     bottom: 331px;
     left: 230px;
@@ -54,7 +56,7 @@
     }
 
     .donor-quote .quote-mark {
-        margin-top: 80px !important;
+        margin-top: 160px !important;
     }
 
       .disease {
