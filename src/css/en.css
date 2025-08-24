@@ -2,12 +2,68 @@
     margin: 6rem 0 2rem 0;
 }
 
-@media only screen and (min-width:800px) {
+@media only screen and (min-width:1024px) {
     .quote-mark {
         margin: 0 0 25px 0;
     }
 
     .donor-quote .quote-mark {
         margin-top: 80px !important;
+    }
+
+      .disease {
+        bottom: 85px;
+        left: 170px;
+    }
+    .indig {
+        bottom: 143px;
+        left: -115px;  
+    }
+    .corp {
+        bottom: 199px;
+        text-align: left;
+        left: -120px;
+
+    }
+    .inst {
+        bottom: 245px;
+        text-align: left;
+        left: -415px;  
+    } 
+    .found {
+        bottom: 300px;
+        text-align: left;
+        left: -378px;  
+    }
+    .nation {
+        bottom: 458px;
+        left: 70px;  
+    } 
+    .prov {
+        bottom: 514px;
+        left: -125px;  
+    } 
+    .pharma {
+        bottom: 575px;
+        text-align: left;
+        left: -42px;
+    }
+    .stake {
+        bottom: 626px;
+        text-align: left;
+        left: -182px;
+    }
+    .eco {
+        bottom: 681px;
+        text-align: left;
+        left: -185px;
+    }
+
+
+    .approach-arrow {
+        top: -407px;
+        left: 92px;
+        rotate: -90deg;
+
     }
 }

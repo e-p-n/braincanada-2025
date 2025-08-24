@@ -1,3 +1,69 @@
 .quote-mark {
     margin: 2rem 0 6rem 0;
 }
+@media only screen and (min-width:1024px) {
+
+    .quote-mark {
+        margin: 0 0 80px 0;
+        line-height: .1em;
+    }
+    .quote {
+        height: 500px;
+    }
+
+    .disease {
+        bottom: 85px;
+        left: 130px;
+    }
+    .indig {
+        bottom: 143px;
+        left: -135px;  
+    }
+    .corp {
+        bottom: 199px;
+        text-align: left;
+        left: -150px;
+
+    }
+    .inst {
+        bottom: 245px;
+        text-align: left;
+        left: -432px;  
+    } 
+    .found {
+        bottom: 300px;
+        text-align: left;
+        left: -398px;  
+    }
+    .nation {
+        bottom: 458px;
+        left: 20px;  
+    } 
+    .prov {
+        bottom: 520px;
+        left: -203px;  
+    } 
+    .pharma {
+        bottom: 582px;
+        text-align: left;
+        left: -162px;
+    }
+    .stake {
+        bottom: 642px;
+        text-align: left;
+        left: -332px;
+    }
+    .eco {
+        bottom: 739px;
+        text-align: left;
+        left: 90px;
+    }
+
+
+    .approach-arrow {
+        top: -468px;
+        left: 368px;
+        rotate: -90deg;
+
+    }
+}

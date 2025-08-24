@@ -22,7 +22,7 @@
         <div class="site-content">
             <div class="animation-container">
 
-                <div class="lines-container">
+                <div class="lines-container hide-wide">
                     <svg id="Layer_1" class="path" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 720 648" aria-hidden="true">
                         <defs>
                             <style>
@@ -105,11 +105,14 @@
                         <path id="light-green" class="st4" d="M-191.87,641.18c1.03-1.69,163.33,1.32,164.41-.31,63.72-96.05,209.93-90.84,267.06-112.67,50.59-19.33,57.38-27.92,83.69-42.16,21.26-11.5,36.99-25.81,67.8-30.1"/>            </svg>                
                     
                     <div class="arrow-container">
-                        <img src="src/img/arrow.svg" alt="">
+                        <img src="../src/img/arrow.svg" alt="">
                             
                     </div>
         
         
+                </div>
+                <div class="arrows-container hide-narrow">
+                    <img src="../src/img/top-arrow.svg" alt="">
                 </div>
                 <div class="title-box">
                     <h1>Tourné vers l’avenir</h1>
@@ -343,16 +346,16 @@
                         <img src="../src/img/light-yellow-corner.svg" alt="">
                     </div>
                 </div>
-                <p style="font-size: .85em;"><sup>1, 2</sup> as reported in the ClinicalTrials.gov database</p>     
+                <p style="font-size: .85em;"><sup>1, 2</sup> Selon la base de données ClinicalTrials.gov</p>     
             </div>
 
             <div class="approach">
-                <h2>Our Allied Approach</h2>
-                <h3>Connect, Convene, Converge</h3>
+                <h2>Approche conjointe</h2>
+                <h3>Point de contact, de rassemblement</h3>
                 <div class="wide-content">
-                    <p class="no-bottom-margin">Brain Canada plays an important role in the brain research ecosystem, acting as a platform for partnership that convenes like-minded organizations and individuals who fund the bold research we need to improve brain health for all. Over its more than 25-year history, Brain Canada has successfully leveraged federal research funding to attract matching investments, significantly amplifying the impact of the government&rsquo;s investment in brain research. This arrangement enabled a total investment of more than $400 million in brain research from 2011&ndash;2024.</p>
+                    <p class="no-bottom-margin">La Fondation Brain Canada joue un rôle important dans l’écosystème de la recherche sur le cerveau, en tant que plateforme de partenariat qui rassemble des organisations et des personnes partageant les mêmes idées et finançant les recherches audacieuses dont nous avons besoin pour améliorer la santé cérébrale de tous. Au cours de ses plus de 25 ans d’existence, la Fondation Brain Canada a réussi à tirer parti du financement fédéral de la recherche pour attirer des investissements équivalents, amplifiant ainsi considérablement l’incidence des montants investis par le gouvernement dans la recherche sur le cerveau. Cette entente a permis un investissement total de plus de 400 millions de dollars dans la recherche sur le cerveau de 2011 à 2024..</p>
                     <div class="message-box" id="approach">
-                        <p class="no-bottom-margin">In Budget 2024, the Government of Canada, through Health Canada, committed to renewing Brain Canada&rsaquo;s mandate through to 2028. From 2024&ndash;2028, Brain Canada will establish a total envelope of $160 million for brain research. Brain Canada is using that investment to bring together partners, donors, and researchers who advance our understanding of the brain and develop innovative and commercializable solutions to its diseases and disorders.</p>
+                        <p class="no-bottom-margin">Dans le Budget 2024, le gouvernement du Canada, par l’intermédiaire de Santé Canada, s’est engagé à renouveler le mandat de la Fondation Brain Canada jusqu’en 2028. De 2024 à 2028, la Fondation Brain Canada consacrera une enveloppe totale de 160 millions de dollars à la recherche sur le cerveau. La Fondation Brain Canada utilise cet investissement pour réunir des partenaires, des donateurs et des chercheurs qui font progresser notre compréhension du cerveau et développent des solutions innovantes et commercialisables pour traiter ses maladies et troubles.</p>
                     </div>
 
                     <button class="more-less" id="approach-button" onclick="showHide('approach', 'small', 'En savoir plus')">En savoir plus ▼</span></button>
@@ -365,51 +368,53 @@
                     <div class="approach-diagram-content">
                         <img class="hide-wide" src="../src/img/imp-brain-health.svg" alt="">
                         <img class="hide-narrow" src="../src/img/imp-brain-health-desktop.svg" alt="">
-                        <p class="disease">Disease Associations <br>
-                                           & Societies
+                        <p class="disease">Associations et sociétés <br>
+                            de lutte contre les maladies
                         </p>
                         <p class="indig">
-                            Organizations  <br class="hide-wide">
-                            Working with  <br>
-                            Indigenous <br class="hide-wide">
-                            Peoples
+                            Organisations <br class="hide-wide">
+                            travaillant  <br>
+                            avec les <br class="hide-wide">
+                            Autochtones
                         </p>
                         <p class="corp">
-                            Corporate
+                            Entreprises
                         </p>
                         <p class="inst">
-                            Research Institutions <br>
-                            & Networks
+                            Instituts et réseaux <br>
+                            de recherche
                         </p>
 
                         <p class="found">
-                            Foundations <br>
-                            & Donors
+                            Fondations <br>
+                            et donateurs
                         </p>
                         <p class="nation">
-                            National & <br>
-                            International Funders
+                            Bailleurs de fonds nationaux <br>
+                            et internationaux
                         </p>
                         <p class="prov">
-                            Provincial Health <br>
-                            Funders
+                            Bailleurs de fonds <br> 
+                            provinciaux, domaine<br>
+                            de la santé
                         </p>
                         <p class="pharma">
-                            Pharma
+                            Industrie <br>
+                            pharmaceutique
                         </p>
                         <p class="stake">
-                            Stakeholders
+                            Parties prenantes
                         </p>
                         <p class="eco">
-                            Brain Research Ecosystem
+                            Écosystème de la recherche sur le cerveau
                         </p>
                         <img class="approach-arrow" src="../src/img/approach-arrow.svg" alt="">
 
                     </div>
                     <div class="approach-footer">
-                        Improved <br>
-                        Brain <br>
-                        Health
+                        Meilleure <br>
+                        santé <br>
+                        cérébrale
                     </div>
                     </div>
 
@@ -418,115 +423,116 @@
             </div>
 
             <div class="research">
-                <h2>Our Funded Research</h2>
+                <h2>Travaux subventionnés</h2>
                 <div class="research-section open no-border" id="in-partners">
-                    <h3>Innovation Partners <button class="more-less large-button" id="in-partners-button" onclick="showHide('in-partners', 'large', '')">△</button></h3>
+                    <h3>Partenaires d’innovation <button class="more-less large-button" id="in-partners-button" onclick="showHide('in-partners', 'large', '')">△</button></h3>
                         
                         <div class="wide-content">
-                            <p>Brain Canada’s innovation partners include individuals, private foundations, corporate donors and others who share Brain Canada’s vision for pushing the boundaries of knowledge about the brain. For example, Brain Canada’s Future Leaders in Canadian Brain Research program is made possible with an anchor gift from the Azrieli Foundation, with support from other major donors. Thanks to this collective generosity, Brain Canada has awarded 109 grants and invested over $10.9 million since 2019 in seed funding to early-career researchers, helping them pursue their bold ideas.</p>
-                            <button class="more-less" id="decoding-button" onclick="showHide('decoding', 'small', 'Read case study')">Read case study ▼</button>
+                            <p>Les partenaires d’innovation comprennent des particuliers, des fondations privées, des entreprises donatrices et d’autres entités qui partagent la vision de la Fondation Brain Canada visant à repousser les limites des connaissances sur le cerveau. Par exemple, le programme Futurs leaders canadiens de la recherche sur le cerveau de la Fondation Brain Canada est rendu possible grâce à un don important de la Fondation Azrieli, avec le soutien d’autres donateurs. Grâce à cette générosité collective, la Fondation Brain Canada a octroyé 109 subventions et investi plus de 10,9 millions de dollars depuis 2019 dans le financement de démarrage destiné aux chercheurs en début de carrière, les aidant ainsi à poursuivre leurs idées audacieuses.</p>
+                            <button class="more-less" id="decoding-button" onclick="showHide('decoding', 'small', 'Lire l’étude de cas')">Lire l’étude de cas ▼</button>
                         </div>
                         <div class="case-study" id="decoding">
                             <div>
-                                <h4>Decoding Depression and Anxiety</h4>
-                                <p>Sensitivity to ongoing stress is linked to higher levels of inflammation in the body and a weakened blood-brain barrier (BBB) that lets this inflammation enter the brain, according to research by Dr. Caroline Ménard (2020 Azrieli Future Leader in Canadian Brain Research) and her team. Stress resilience is connected to maintenance of brain barrier integrity, and this maintenance is facilitated by an increase in what are called CB1 receptors on astrocytes, star-shaped cells that line the BBB like a fence. Dr. Ménard hopes that these findings will inform the development of targeted therapies for depression and anxiety, to help the 30-50% of individuals for whom currently available treatments aren’t effective.</p>
+                                <h4>Décrypter la dépression et l’anxiété</h4>
+                                <p>La sensibilité au stress chronique est associée à des niveaux plus élevés d’inflammation dans l’organisme et à un affaiblissement de la barrière hémato-encéphalique (BHE) qui laisse cette inflammation pénétrer dans le cerveau, selon les recherches menées par la Dre Caroline Ménard (lauréate d’une subvention dans le cadre du programme Futurs leaders canadiens de la recherche sur le cerveau de la Fondation Azrieli en 2020) et son équipe. La résilience au stress est liée au maintien de l’intégrité de la barrière cérébrale, et ce maintien est facilité par une augmentation des récepteurs CB1 sur les astrocytes, des cellules en forme d’étoile qui tapissent la BHE comme une barrière. La Dre Ménard espère que ces résultats contribueront au développement de traitements ciblés contre la dépression et l’anxiété afin d’aider les 30 à 50 % de personnes pour lesquelles les traitements actuels ne sont pas efficaces.</p>
                             </div>
 
-                            <img src="../src/img/menard.jpg" alt="" class="research-img">
+                            <img src="./src/img/menard.jpg" alt="" class="research-img">
                         </div>
                 </div>
                 <div class="research-section" id="ch-partners">
 
-                    <h3>Health Charity Partners <button class="more-less large-button"  id="ch-partners-button" onclick="showHide('ch-partners', 'large', '')">▽</button></h3>
+                    <h3>Organismes de santé bénévoles partenaires <button class="more-less large-button"  id="ch-partners-button" onclick="showHide('ch-partners', 'large', '')">▽</button></h3>
                     <div class="wide-content">
-                        <p>Brain Canada’s commitment to advancing our understanding of the brain and identifying solutions to its diseases and disorders takes a targeted approach with health charity partners. Through these partnerships, we’re able to amplify funding aimed at specific diseases and disorders, from Alzheimer’s disease and ALS to brain cancer and stroke.</p>
+                        <p>L’engagement de la Fondation Brain Canada à faire progresser notre compréhension du cerveau et à trouver des solutions à ses maladies et à ses troubles repose sur une approche ciblée menée en collaboration avec des organismes de santé bénévoles partenaires. Grâce à ces partenariats, nous sommes en mesure d’augmenter les fonds destinés à la recherche sur des maladies et des troubles précis, comme la maladie d’Alzheimer, la SLA, le cancer du cerveau et les accidents vasculaires cérébraux.</p>
                         
-                        <button class="more-less" id="trail-button" onclick="showHide('trail', 'small', 'Read case study')">Read case study ▼</button>
+                        <button class="more-less" id="trail-button" onclick="showHide('trail', 'small', 'Lire l’étude de cas')">Lire l’étude de cas ▼</button>
                     </div>                    
                     <div class="case-study" id="trail">
                         <div>
-                            <h4>Trailblazing Alzheimer’s Findings</h4>
-                            <p>A research project led by Dr. Sylvain Baillet, funded via the Alzheimer’s Association International Research Grant Program in partnership with Brain Canada, generated new insights into early brain changes in Alzheimer’s disease. He and his team studied healthy older adults at risk for Alzheimer’s and found that early amyloid buildup in the brain is linked to increased brain activity. However, they found that when tau protein also builds up—especially in memory-related areas—brain activity slows down and early signs of cognitive decline appear. These findings, which mirror patterns seen in animal studies, help us better understand how Alzheimer’s develops before symptoms appear, bringing us closer to early detection and targeted treatments for Alzheimer’s disease.</p>
+                            <h4>Découvertes révolutionnaires sur la maladie d’Alzheimer</h4>
+                            <p>Un projet de recherche dirigé par le Dr Sylvain Baillet, financé par le programme international de bourses de recherche de l’Alzheimer’s Association en partenariat avec la Fondation Brain Canada, a permis d’acquérir de nouvelles connaissances sur les changements précoces qui surviennent dans le cerveau dans le cas de la maladie d’Alzheimer. Le Dr Sylvain Baillet et son équipe ont étudié des personnes âgées en bonne santé présentant un risque de développer la maladie d’Alzheimer et ont découvert qu’une accumulation précoce d’amyloïde dans le cerveau était liée à une augmentation de l’activité cérébrale. Cependant, ils ont constaté que, lorsque la protéine tau s’accumule également, en particulier dans les zones liées à la mémoire, l’activité cérébrale ralentit et les premiers signes de déclin cognitif se manifestent. Ces résultats, qui reflètent les tendances observées dans les études animales, nous aident à mieux comprendre comment la maladie d’Alzheimer se développe avant l’apparition des symptômes, ce qui nous rapproche de la détection précoce et des traitements ciblés pour cette maladie.</p>
                         </div>
-                        <img src="../src/img/baillet.jpg" alt="" class="research-img">
+                        <img src="./src/img/baillet.jpg" alt="" class="research-img">
                     </div>
                 </div>         
                 <div class="research-section" id="com-partners">
-                    <h3>Commercialization Partners <button class="more-less large-button"  id="com-partners-button" onclick="showHide('com-partners', 'large', '')">▽</button></h3>
+                    <h3>Partenaires de commercialisation <button class="more-less large-button"  id="com-partners-button" onclick="showHide('com-partners', 'large', '')">▽</button></h3>
                     <div class="wide-content">
-                        <p>Brain Canada has a proven track record of successful collaboration with industry and academia to accelerate brain health innovations. For example, Brain Canada has partnered with the Quebec Consortium for Drug Discovery, CQDM, since 2014.</p>
-                    <button class="more-less" id="insomnia-button" onclick="showHide('insomnia', 'small', 'Read case study')">Read case study ▼</button>
+                        <p>La Fondation Brain Canada a fait ses preuves en matière de collaboration fructueuse avec l’industrie et le milieu universitaire afin d’accélérer les innovations dans le domaine de la santé cérébrale. Elle collabore notamment depuis 2014 avec le Consortium québécois pour la découverte de médicaments (CQDM).</p>
+                    <button class="more-less" id="insomnia-button" onclick="showHide('insomnia', 'small', 'Lire l’étude de cas')">Lire l’étude de cas ▼</button>
                     </div>
                     
                     <div class="case-study" id="insomnia">
                         <div>
-                            <h4>Taming Insomnia and Neuropathic Pain</h4>
-                            <p>Dr. Gabriella Gobbi’s CQDM and Brain Canada-funded research breakthrough could transform treatment for insomnia and neuropathic pain. The compound they discovered uniquely targets brain receptors that control circadian rhythms, promoting deep, restorative sleep while reducing chronic pain at lower doses. With 24% of Canadians suffering sleep disorders and limited neuropathic pain treatments available, this dual-action therapy addresses massive unmet medical needs. Dr. Gobbi and her team worked with academic and industry partners to transform the compound into a viable drug formulation, and are now looking ahead to first human trials.</p>
+                            <h4>Gérer l’insomnie et la douleur neuropathique</h4>
+                            <p>Financés par le CQDM et la Fondation Brain Canada, les travaux de recherche révolutionnaires de la Dre Gabriella Gobbi pourraient transformer le traitement de l’insomnie et de la douleur neuropathique. Le composé qu’elle a découvert cible précisément les récepteurs cérébraux qui contrôlent les rythmes circadiens, favorisant un sommeil profond et réparateur tout en réduisant la douleur chronique à des doses plus faibles. Étant donné que 24 % des Canadiens souffrent de troubles du sommeil et que les traitements de la douleur neuropathique sont limités, cette thérapie à double action répond à d’importants besoins médicaux non satisfaits. La Dre Gobbi et son équipe ont collaboré avec des partenaires universitaires et industriels afin de transformer le composé en une formulation pharmaceutique viable et se préparent désormais à mener les premiers essais cliniques sur des sujets humains.</p>
                         </div>
-                        <img src="../src/img/gobbi.jpg" alt="" class="research-img">
+                        <img src="./src/img/gobbi.jpg" alt="" class="research-img">
                     </div>
                 </div>         
                 <div class="research-section" id="pl-partners">
-                    <h3>Platform Partners <button class="more-less large-button"  id="pl-partners-button" onclick="showHide('pl-partners', 'large', '')">▽</button></h3>
+                    <h3>Partenaires de soutien aux plateformes <button class="more-less large-button"  id="pl-partners-button" onclick="showHide('pl-partners', 'large', '')">▽</button></h3>
                     <div class="wide-content">
-                        <p>Platform Support Grant (PSG) recipients secure their own sponsors to match Brain Canada’s investments. These sponsors vary from academic institutions and research centers to foundations and corporations. Between 2014–25, Brain Canada has awarded 60 PSGs in partnership with over 80 unique sponsors, for a total investment of $162.5 million. </p>
-                        <button class="more-less" id="breakthrough-button" onclick="showHide('breakthrough', 'small', 'Read case study')">Read case study ▼</button>
+                        <p>Les lauréats de la subvention de soutien aux plateformes doivent trouver leurs propres commanditaires et obtenir de ceux-ci un apport équivalent aux investissements de la Fondation Brain Canada. Il peut s’agir d’établissements universitaires, de centres de recherche, de fondations ou d’entreprises. De 2014 à 2025, la Fondation Brain Canada a octroyé 60 subventions de soutien aux plateformes en partenariat avec plus de 80 commanditaires uniques, pour un investissement total de 162,5 millions de dollars. </p>
+                        <button class="more-less" id="breakthrough-button" onclick="showHide('breakthrough', 'small', 'Lire l’étude de cas')">Lire l’étude de cas ▼</button>
                     </div>
                     <div class="case-study" id="breakthrough">
                         <div>
-                            <h4>Breakthroughs in Suicide Prevention</h4>
-                            <p>The one-of-a-kind Douglas-Bell Canada Brain Bank, led by Dr. Gustavo Turecki (PSG 2014, 2019), houses more than 3,600 brains maintained in the best possible conditions for cutting-edge scientific research. It distributes more than 2,000 brain samples on an annual basis to dozens of researchers across Canada and around the world. It has enabled countless breakthroughs on everything from the effects of early-life adversity on the brain, to why disparities in depression rates and treatment efficacy differ between men and women. And according to the Overton Index, the world’s largest policy and grey literature database, one of the Brain Bank’s seminal publications has informed suicide prevention policy documents globally.</p>
+                            <h4>Percées en matière de prévention du suicide</h4>
+                            <p>La Banque de cerveaux Douglas-Bell Canada, unique en son genre, dirigée par le Dr Gustavo Turecki (lauréat d’une subvention de soutien aux plateformes en 2014 et en 2019), abrite plus de 3 600 cerveaux conservés dans les meilleures conditions possibles pour la recherche scientifique de pointe. Elle distribue chaque année plus de 2 000 échantillons de cerveau à des dizaines de chercheurs au Canada et ailleurs dans le monde. Elle a permis d’innombrables percées dans des domaines aussi variés que les effets des adversités précoces sur le cerveau ou les raisons pour lesquelles les disparités dans les taux de dépression et l’efficacité des traitements diffèrent entre les hommes et les femmes. De plus, selon l’Overton Index, la plus grande base de données mondiale sur les politiques et la littérature grise, l’une des publications phares de la Banque de cerveaux a servi de base à des documents politiques sur la prévention du suicide dans le monde entier..</p>
                         </div>
-                        <img src="../src/img/turecki.jpg" alt="" class="research-img">
+                        <img src="./src/img/turecki.jpg" alt="" class="research-img">
                     </div>
 
                 </div>            
             </div>
             <div class="journey">
-                <h2>Our Journey</h2>
-                <h3>The Future Has Always Been Our Horizon</h3>
+                <h2>Parcours</h2>
+                <h3>Nous avons toujours été tournés vers l’aveni</h3>
                 <div class="slider-wrapper">
                 <div class="animation-item animate">
                 <div class="items-holder">
                 <div class="items">
                     <div class="item">
                         <h4>1998</h4>
-                        <p>Brain Canada is born, but under a different name: the NeuroScience Canada Partnership and Foundation</p> 
+                        <p>Naissance de la Fondation Brain Canada, mais sous un nom différent : Partenariat et Fondation NeuroScience Canada.</p> 
                     </div>
                     <div class="item">
                         <h4>2001</h4>
-                        <p>Brain Repair Program is launched, with the goal of accelerating collaborative, multidisciplinary, multi-institutional brain repair research</p> 
+                        <p>Lancement du programme Régénération du cerveau dans le but d’accélérer la recherche collaborative, multidisciplinaire et multi-institutionnelle sur la réparation du cerveau.</p> 
                     </div>
                     <div class="item">
                         <h4>2006</h4>
-                        <p>The Case for Canada’s Increased Investment in Brain Research reveals the total economic burden of brain disorders</p> 
+                        <p>Les arguments en faveur d’un investissement accru du Canada pour la recherche en neuroscience révèlent le fardeau économique des maladies du cerveau.</p> 
                     </div>
                     <div class="item">
                         <h4>2008</h4>
-                        <p>NeuroScience Canada rallies health charities to speak to the government about brain strategy with one voice</p> 
+                        <p>La Fondation mobilise les organismes de santé bénévoles et devient l’interlocutrice du gouvernement en matière de stratégie de recherche sur le cerveau.</p> 
                     </div>
                     <div class="item">
                         <h4>2010</h4>
-                        <p>The organization approaches the Government of Canada to form a partnership supporting brain research</p> 
+                        <p>Démarche auprès du gouvernement du Canada en vue de former un partenariat en faveur de la recherche sur le cerveau.</p> 
                     </div>
                     <div class="item long">
                         <h4>2011</h4>
-                        <p>The name Brain Canada Foundation is established as well as the Canada Brain Research Fund (CBRF), a partnership with the Government of Canada to match $100M</p> 
+                        <p>Organisme rebaptisé Fondation Brain Canada et création du Fonds canadien de recherche sur le cerveau (FCRC), un partenariat avec le gouvernement du Canada avec des fonds de contrepartie de 100 M$.</p> 
                     </div>
                     <div class="item">
                         <h4>2016 - 2021</h4>
-                        <p>The Government of Canada invests an additional $100M in CBRF</p> 
+                        <p>Le gouvernement du Canada investit 100 M$ de plus dans le FCRC.</p> 
                     </div>
                     <div class="item">
                         <h4>2024</h4>
-                        <p>Budget 2024 renews CBRF with a commitment of $80M</p> 
+                        <p>Le Budget 2024 renouvelle l’engagement dans le FCRC à hauteur de 80 M$.</p> 
                     </div>
                     <div class="item">
                         <h4>2025</h4>
-                        <p>Brain Canada continues to accelerate, amplify and fund brain research in Canada</p> 
+                        <p>La Fondation Brain Canada continue d’accélérer, d’amplifier et de financer la recherche sur le cerveau au Canada.</p> 
                     </div>
-                  </div>
-                  <img src="../src/img/time-line-arrow.svg" alt="">
+
+                </div>
+                  <img src="./src/img/time-line-arrow.svg" alt="">
 
                 </div>  
 
@@ -534,43 +540,43 @@
                 <div class="items" style="display: none;">
                     <div class="item">
                         <h4>1998</h4>
-                        <p>Brain Canada is born, but under a different name: the NeuroScience Canada Partnership and Foundation</p> 
+                        <p>Naissance de la Fondation Brain Canada, mais sous un nom différent : Partenariat et Fondation NeuroScience Canada.</p> 
                     </div>
                     <div class="item">
                         <h4>2001</h4>
-                        <p>Brain Repair Program is launched, with the goal of accelerating collaborative, multidisciplinary, multi-institutional brain repair research</p> 
+                        <p>Lancement du programme Régénération du cerveau dans le but d’accélérer la recherche collaborative, multidisciplinaire et multi-institutionnelle sur la réparation du cerveau.</p> 
                     </div>
                     <div class="item">
                         <h4>2006</h4>
-                        <p>The Case for Canada’s Increased Investment in Brain Research reveals the total economic burden of brain disorders</p> 
+                        <p>Les arguments en faveur d’un investissement accru du Canada pour la recherche en neuroscience révèlent le fardeau économique des maladies du cerveau.</p> 
                     </div>
                     <div class="item">
                         <h4>2008</h4>
-                        <p>NeuroScience Canada rallies health charities to speak to the government about brain strategy with one voice</p> 
+                        <p>La Fondation mobilise les organismes de santé bénévoles et devient l’interlocutrice du gouvernement en matière de stratégie de recherche sur le cerveau.</p> 
                     </div>
                     <div class="item">
                         <h4>2010</h4>
-                        <p>The organization approaches the Government of Canada to form a partnership supporting brain research</p> 
+                        <p>Démarche auprès du gouvernement du Canada en vue de former un partenariat en faveur de la recherche sur le cerveau.</p> 
                     </div>
                     <div class="item long">
                         <h4>2011</h4>
-                        <p>The name Brain Canada Foundation is established as well as the Canada Brain Research Fund (CBRF), a partnership with the Government of Canada to match $100M</p> 
+                        <p>Organisme rebaptisé Fondation Brain Canada et création du Fonds canadien de recherche sur le cerveau (FCRC), un partenariat avec le gouvernement du Canada avec des fonds de contrepartie de 100 M$.</p> 
                     </div>
                     <div class="item">
                         <h4>2016 - 2021</h4>
-                        <p>The Government of Canada invests an additional $100M in CBRF</p> 
+                        <p>Le gouvernement du Canada investit 100 M$ de plus dans le FCRC.</p> 
                     </div>
                     <div class="item">
                         <h4>2024</h4>
-                        <p>Budget 2024 renews CBRF with a commitment of $80M</p> 
+                        <p>Le Budget 2024 renouvelle l’engagement dans le FCRC à hauteur de 80 M$.</p> 
                     </div>
                     <div class="item">
                         <h4>2025</h4>
-                        <p>Brain Canada continues to accelerate, amplify and fund brain research in Canada</p> 
+                        <p>La Fondation Brain Canada continue d’accélérer, d’amplifier et de financer la recherche sur le cerveau au Canada.</p> 
                     </div>
 
                 </div>
-                 <img src="../src/img/time-line-arrow.svg" alt="">
+                 <img src="./src/img/time-line-arrow.svg" alt="">
 
                 </div>
 
@@ -581,64 +587,63 @@
             </div>
 
         <div class="donors">
-            <h2>Our Donors</h2>
-            <h3>Our Deepest Gratitude for <br>
-            Your Selfless Support</h3>
+            <h2>Donateurs</h2>
+            <h3>Un grand merci pour votre<br> soutien désintéressé</h3>
             <div class="wide-content">
-                <p class="no-bottom-margin">We extend profound appreciation to our lead donors, whose caring, transformative contributions are driving research breakthroughs. Each collaboration sets a powerful example and plays a vital role in shaping the future of brain health, in Canada and beyond.</p>
+                <p class="no-bottom-margin">Nous tenons à exprimer notre profonde gratitude à nos généreux donateurs qui contribuent à l’avancement de la science. Chaque collaboration se veut un exemple éloquent du rôle que l’on peut jouer dans l’avenir de la santé cérébrale, au Canada et partout ailleurs.</p>
             </div>
-            <div class="donor-list wide-content" id="donor-list">
+            <div class="donor-list" id="donor-list">
                 <div>
                     <h4>$100,000+ (Lead Donors)</h4>
                     <ul class="hidden-list">
-                        <li> American Iron & Metal (AIM) /AIM Recyclage</li>
-                        <li>The Azrieli FoundationBell Canada</li>
-                        <li>Hewitt Foundation</li>
-                        <li>Kacharie Foundation</li>
-                        <li>The Krembil Foundation</li>
-                        <li>The Erika Legacy Foundation</li>
-                        <li>Omico Investments Inc.</li>
-                        <li>Power Corporation of Canada</li>
-                        <li>RBC Foundation</li>
-                        <li>Alvin Segal Family Foundation</li>
-                        <li>Tavares Family Foundation</li>
-                        <li>Larry & Judy Tanenbaum Family Foundation</li>
+                        <li>American Iron & Metal (AIM) /AIM Recyclage</li>
+                        <li>Fondation Azrieli/li>
+                        <li>Bell Canada</li>
+                        <li>Fondation Hewitt</li>
+                        <li>Fondation Kacharie</li>
+                        <li>Fondation Krembil</li>
+                        <li>Fondation Erika Legacy</li>
+                        <li>Omico Investments inc.</li>
+                        <li>Power Corporation du Canada</li>
+                        <li>Fondation RBC</li>
+                        <li>Fondation de la famille Alvin Segal</li>
+                        <li>Fondation de la famille Tavares</li>
+                        <li>Fondation de la famille Larry et Judy Tanenbaum</li>
                         <li>Women’s Brain Health Initiative</li>
                     </ul>
-                    <h4>$25,000–$99,999</h4>
+                    <h4>25 000 $ à 99 999 $</h4>
                     <ul class="hidden-list">
-                        <li>The Arrell Family Foundation</li>
-                        <li>Ken & Sharron Bowman Foundation</li>
-                        <li>Crabtree Foundation</li>
+                        <li>Fondation de la famille Arrell</li>
+                        <li>Fondation Ken et Sharron Bowman</li>
+                        <li>Fondation Crabtree</li>
                         <li>John & Mary Crocker</li>
                         <li>GO LLP Chartered Professional Accountants</li>
-                        <li>Lotte & John Hecht Memorial Foundation</li>
-                        <li>Jane Inch</li>
+                        <li>Fondation commémorative Lotte et John Hecht</li>
+                        <li>Jane Inch</li>
                         <li>Blair I. Levinsky</li>
-                        <li>The Catherine and Maxwell Meighen Foundation</li>
-                        <li>The Barbara Turnbull Foundation for Spinal Cord ResearchWheeler Family Foundation</li>
+                        <li>Fondation Catherine et Maxwell Meighen</li>
+                        <li>Fondation Barbara Turnbull pour la recherche sur la moelle épinière</li>
+                        <li>Fondation de la famille Mireille et Murray Steinberg</li>
                     </ul>                    
                 </div>
                 <div>
-                <h4>$10,000–$24,999</h4>
+                <h4>10 000 $ à 24 999 $</h4>
                 <ul class="hidden-list">
                     <li>Bondi Produce & Specialty Foods</li>
-                    <li>M. Wayne and J. Coleman Family Fund</li>
+                    <li>Fondation de la famille M. Wayne et J. Coleman</li>
                     <li>Do It For Dementia</li>
-                    <li>London Drugs Foundation</li>
+                    <li>Fondation London Drugs</li>
                     <li>Toby Fouks</li>
-                    <li>The Henry and Berenice Kaufmann Foundation</li>
-                    <li>JSHMP Holdings Ltd.</li>
-                    <li>The Mireille and Murray</li>
-                    <li>Steinberg Family Foundation</li>
-                </ul>     
-                <p class="no-bottom-margin"><a href="https://braincanada.ca/our-donors/">See our full list of donors</a></p>
+                    <li>Fondation Henry et Berenice Kaufmann</li>
+                    <li>SHMP Holdings ltée</li>
+                    <li>The Mireille and Murray Steinberg Family Foundation</li>                </ul>     
+                <p class="no-bottom-margin"><a href="https://braincanada.ca/fr/nos-donateurs/">Consultez notre liste complète de donateurs</a></p>
 
                 <div class="donor-quote hide-narrow">
                     <p> <div class="quote-mark">&laquo;</div>
-                    Warren Buffet once said, &lsquo;Someone is sitting in the shade today because someone planted a tree a long time ago.&rsquo; Likewise, our family is investing in research today, believing remarkable outcomes will arise tomorrow.&raquo;</p>
-                    <p class="donor-quote-name-title"><span class="bold">Mireille and Murray Steinberg</span> <br>
-                    The Mireille and Murray Steinberg Family Foundation    
+                    Un jour, Warren Buffet a dit : « Quelqu’un s’assoit à l’ombre aujourd’hui parce que quelqu’un d’autre a planté un arbre il y a longtemps. » De même, notre famille investit aujourd’hui dans la recherche, convaincue que cela portera ses fruits demain..&raquo;</p>
+                    <p class="donor-quote-name-title"><span class="bold">Mireille et Murray Steinberg</span> <br>
+                    Fondation de la famille Mireille et Murray Steinberg    
                     </p>
                 </div>
 
@@ -649,40 +654,38 @@
             <button class="more-less hide-wide donor-button" id="donor-list-button" onclick="showHide('donor-list', 'small', 'Donors for the period of April 1, 2024–March 31, 2025')">Donors for the period of April 1, 2024–March 31, 2025 ▼</button>
             <div class="donor-quote hide-wide">
                 <p> <div class="quote-mark">&laquo;</div>
-                Warren Buffet once said, &lsquo;Someone is sitting in the shade today because someone planted a tree a long time ago.&rsquo; Likewise, our family is investing in research today, believing remarkable outcomes will arise tomorrow.&raquo;</p>
-                <p class="donor-quote-name-title"><span class="bold">Mireille and Murray Steinberg</span> <br>
-                The Mireille and Murray Steinberg Family Foundation    
+                Un jour, Warren Buffet a dit : « Quelqu’un s’assoit à l’ombre aujourd’hui parce que quelqu’un d’autre a planté un arbre il y a longtemps. » De même, notre famille investit aujourd’hui dans la recherche, convaincue que cela portera ses fruits demain..&raquo;</p>
+                <p class="donor-quote-name-title"><span class="bold">Mireille et Murray Steinberg</span> <br>
+                Fondation de la famille Mireille et Murray Steinberg    
                 </p>
             </div>
 
         </div>
         <div class="financials">
-            <h2>Our Financials</h2>
-            <h3>Strength in Numbers</h3>
-            <p>Brain Canada Foundation's audited <br>
-            financial statements, prepared by EY, <br>
-            are available <a href="https://braincanada.ca/wp-content/uploads/2025/08/Brain-Canada-Foundation-Financial-Statements-2025.pdf">here.</a></p>    
+            <h2>Finances</h2>
+            <h3>La force du nombre</h3>
+            <p>Les états financiers vérifiés de la Fondation Brain Canada, <br> préparés par EY, sont disponibles <a href="https://braincanada.ca/wp-content/uploads/2025/08/Etats-financiers_Fondation-Brain-Canada.pdf">ici</a>.</p>    
         </div>
         <footer>
             <div class="column1">
                 <h2>Bonded in Vision, <br>
                 Boundless in Possibility</h2>
-                <p>This report covers a 12-month period from April 1, 2024 to March 31, 2025. </p>
-                <p>Production of this Annual Report has been made possible with the financial support of Health Canada through the Canada Brain Research Fund. The views expressed herein do not necessarily represent the views of the Minister of Health or the Government of Canada.</p>
-                <p>Brain Canada is a national registered charity that enables and supports excellent, innovative, paradigm-changing brain research in Canada.</p>
-                <p>Registration number: 89105 2094 RR0001</p>
-                <a href="https://www.canada.ca/en/health-canada.html" target="health_canada"><img src="../src/img/healthcanada.svg" alt="Health Canada"></a>
+                <p>Ce rapport couvre une période de 12 mois allant du 1er avril 2024 au 31 mars 2025. </p>
+                <p>La production de ce rapport annuel a été rendue possible grâce au soutien financier de Santé Canada par l’intermédiaire du Fonds canadien de recherche sur le cerveau. Les opinions exprimées dans ce document ne représentent pas nécessairement celles du ministre de la Santé ni du gouvernement du Canada.</p>
+                <p>La Fondation Brain Canada est un organisme de bienfaisance national enregistré qui appuie la recherche sur le cerveau au Canada en finançant des travaux novateurs capables de changer la donne.</p>
+                <p>Numéro d’enregistrement</p>
+                <a href="hhttps://www.canada.ca/fr/sante-canada.html" target="health_canada"><img src="../src/img/healthcanada.svg" alt="Santé Canada"></a>
             </div>
             <div class="column2">
-            <h3>Learn more:</h3>
-            <p><a href="#">Download annual report</a></p>
-            <p><a href="https://braincanada.ca/about/publications/
-">View past annual reports</a></p>
+            <h3>Suivez-nous :</h3>
+            <p><a href="#">Téléchargez le rapport annuel</a></p>
+            <p><a href="https://braincanada.ca/fr/a-propos/publications/
+">Accédez aux anciens rapports</a></p>
             <p><a href="https://braincanada.ca/
-">Visit braincanda.ca</a></p>
-            <p><a href="https://braincanada.akaraisin.com/ui/donatenow
-">Donate</a></p>
-            <p><a href="https://braincanada.ca/contact/">Subscribe</a></p>
+">Visitez Braincanada.ca</a></p>
+            <p><a href="https://braincanada.akaraisin.com/ui/donnermaintenant
+">Faites un don</a></p>
+            <p><a href="https://braincanada.ca/fr/contactez/">S’inscrire</a></p>
             <div class="social">
                 <a href="https://www.linkedin.com/company/brain-canada/" target="linkedIn"><img src="../src/img/linkedin.svg" alt="LinkedIn"></a>
                 <a href="https://x.com/BrainCanada" target="X"><img src="../src/img/twitter.svg" alt="X (formerly Twitter)"></a>

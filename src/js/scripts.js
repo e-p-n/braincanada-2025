@@ -2,6 +2,7 @@
 // MORE/LESS BUTTONS
 
 function showHide(id, size, text) {
+    console.log("clicked");
     let more = text + " ▼";
     let less = text + " ▲";
     if (size === "large") {
