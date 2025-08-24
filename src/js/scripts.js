@@ -3,6 +3,9 @@
 
 function showHide(id, size, text) {
     console.log("clicked");
+    if (text === "long") {
+        text = "Donateurs pour la période du 1<sup>er</sup>&nbsp;avril&nbsp;2024&nbsp;au&nbsp;31&nbsp;mars&nbsp;2025"
+    }
     let more = text + " ▼";
     let less = text + " ▲";
     if (text === "More") {
@@ -66,8 +69,6 @@ function mouseOverSlideDown(event) {
 const yirObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting) {
-            console.log("triggered");
-            // entry.target.classList.remove('anim-padding');
             entry.target.classList.add('animate');
             console.log(entry.target.classList);
         }
@@ -77,26 +78,12 @@ const yirObserver = new IntersectionObserver(entries => {
 }
 )
 
-// const yirObserver = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//         if(entry.isIntersecting) {
-//             let liTags = entry.target.children;
-
-//             for(let i=0; i < liTags.length; i++) {
-//                 liTags[i].classList.add("animate");
-
-//             }
-  
-//         }
-//     })
-// })
 
 const ipObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         let infoBox = document.getElementById("info-box");
         if(entry.isIntersecting) {
-            // infoBox.classList.replace("ib-slide-up", "ib-slide-down");
-            // infoBox.classList.replace("ib-initial-pos", "ib-revised-pos");
+
             entry.target.classList.add("ip-slide-down");
         }
     },
@@ -107,50 +94,9 @@ const ipObserver = new IntersectionObserver(entries => {
 })
 
 
-// **** Load Graph animation on View ****
-const graphObserver = new IntersectionObserver(entries => {
-    
 
-    // ANIMATE GRAPHS
-    let graphs = document.getElementById("financials");
-    // Loop over the entries
-    entries.forEach(entry => {
-      // If the element is visible
-      if (entry.isIntersecting) {
-        // Add the animation classes to divs with "row" class and lis with "legend-item"
-        let rows = graphs.getElementsByTagName("div");
-        for (let i= 0; i < rows.length; i++) {
-            if(rows[i].classList.contains("row")) {
-                 rows[i].classList.add("start-animation");
-            }
-        }
-        let legends = graphs.getElementsByTagName("li");
-        for (let i= 0; i < legends.length; i++) {
-            if(legends[i].classList.contains("legend-item")){
-                legends[i].classList.add("start-animation");
-            }
-        }    
-        let headings = graphs.getElementsByTagName("h4");  
-        for (let i= 0; i < headings.length; i++) { 
-            headings[i].classList.add("animate");
-        }
-      }
-
-    },
-    {
-        rootMargin: "0 0 -200px 0"
-    }
-    );
-  });
-
-// graphObserver.observe(document.querySelector('.fi-graph'));
 yirObserver.observe(document.querySelector('.yir-covers'));
 yirObserver.observe(document.querySelector('.approach-diagram'));
+yirObserver.observe(document.querySelector('.animation-item'));
 
-// const animations = document.querySelectorAll('.animation-item');
-// animObserver.observe(document.querySelectorAll('.animation-item'));
-
-// const infoBox = document.getElementById("info-box");
-// infoBox.addEventListener("mouseover", mouseOverSlideUp);
-// infoBox.addEventListener("mouseleave", mouseOverSlideDown);
 
