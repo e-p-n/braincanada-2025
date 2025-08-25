@@ -350,7 +350,8 @@ padding: 0;
 }
 .quote-mark-fr {
     top:0;
-    margin: .4em 0;
+    margin: 0 0 .3em;
+    top:-.1em;
 }
 .quote-name-title {
     color: white;
