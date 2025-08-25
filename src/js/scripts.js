@@ -98,6 +98,7 @@ yirObserver.observe(document.querySelector('.animation-item'));
 yirObserver.observe(document.querySelector('.quote'));
 yirObserver.observe(document.querySelector('.vision-mission'));
 yirObserver.observe(document.querySelector('#ceo-quote'));
-
+yirObserver.observe(document.querySelector('.donor-quote'));
+yirObserver.observe(document.querySelector('#don-quote'));
 finObserver.observe(document.querySelector('.financials'));
 
