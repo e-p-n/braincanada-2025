@@ -103,6 +103,8 @@ button.more-less {
     font-size: .95rem;
 }
 
+
+
 button.large-button {
     font-size: 1em !important;
     display: inline !important;
@@ -305,6 +307,10 @@ padding: 0;
     font-weight: 400;
     font-size: .86em;
 
+}
+
+.tight {
+    letter-spacing: -.03em;
 }
 
 .yir {
@@ -684,14 +690,15 @@ padding: 0;
     padding: var(--standard-padding);
     font-weight: 300;
     font-size: 1rem;
-    background: url(../img/arrows-back.png);
-    background-size:100%;
-    background-repeat: no-repeat;
-    background-position: bottom;
     padding-bottom: 200px;
     margin-bottom: var(--standard-padding);
 }
-
+.finance-arrows {
+    background: url(../img/finance-arrows-small.gif);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
 
 footer {
     max-width: var(--max-width);
@@ -779,6 +786,29 @@ footer h3 {
         width: 100%;
         overflow: hidden;
     }
+    .lines-container {
+        width: 1024px;
+        animation: none;
+        transform: scaleX(-1);
+        left:auto;
+        overflow: visible;
+
+    }
+
+    .arrow-container {
+        width: 750px;
+        position: absolute;
+        top: 387px;
+        left: -720px;
+        animation: arrow 1500ms linear forwards 1;
+    }
+    
+    /* .path {
+        width: 1000px;
+        position: relative;
+        bottom: 200;
+        right: 900px;
+    } */
     .animation-container {
         width: 100%;
         max-width: 1024px;
@@ -986,9 +1016,16 @@ footer h3 {
         padding: 6px;
     }
 
+    /* .yir-stats div {
+        flex-direction: column;
+        width: 280px;
+    } */
+
     .yir div p {
         font-size: 1.8em;
         line-height: 1.2em;
+        margin-right: 20px;
+
     }
 
     .yir-number {
@@ -1143,14 +1180,18 @@ footer h3 {
     }
 
     .financials {
-        background: url('../img/arrows-back-wide.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: bottom;
+
     }
     .yir-process, .yir-outputs {
         position: relative;
         left: -51px;
+    }
+
+    .finance-arrows {
+        background: url(../img/finance-arrows.gif);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
     }
 
 

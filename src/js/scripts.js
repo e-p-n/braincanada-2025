@@ -79,16 +79,15 @@ const yirObserver = new IntersectionObserver(entries => {
 )
 
 
-const ipObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        let infoBox = document.getElementById("info-box");
-        if(entry.isIntersecting) {
 
-            entry.target.classList.add("ip-slide-down");
+
+const finObserver = new IntersectionObserver(entries => {
+    var i = 1
+    entries.forEach(entry => {
+        if(entry.isIntersecting && i < 2) {
+            entry.target.classList.add('finance-arrows');
         }
-    },
-    {
-        rootMargin: "200px"
+        i++;
     })
 
 })
@@ -98,5 +97,5 @@ const ipObserver = new IntersectionObserver(entries => {
 yirObserver.observe(document.querySelector('.yir-covers'));
 yirObserver.observe(document.querySelector('.approach-diagram'));
 yirObserver.observe(document.querySelector('.animation-item'));
-
+finObserver.observe(document.querySelector('.financials'));
 
