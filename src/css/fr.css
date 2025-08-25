@@ -5,49 +5,50 @@
     height: 40rem;
 }
 .disease {
-    bottom: 333px;
+    bottom: 329px;
     left: 230px;
 }
 .indig {
-    bottom: 242px;
+    bottom: 238px;
     left: 165px;  
 }
 .corp {
-    bottom: 316px;
+    bottom: 312px;
     left: -155px;
 
 }
 .inst {
-    bottom: 366px;
+    bottom: 362px;
     left: -212px;  
 } 
 .found {
-    bottom: 450px;
+    bottom: 446px;
     left: 92px;  
 }
 .nation {
-    bottom: 420px;
+    bottom: 416px;
     left: 142px;  
 } 
 .prov {
-    bottom: 350px;
+    bottom: 346px;
     left: 75px;  
 } 
 .pharma {
-    bottom: 348px;
-    left: -48px;
+    bottom: 342px;
+    left: -27px;
 }
 .stake {
-    bottom: 385px;
+    bottom: 380px;
     left: -65px;
 }
 .eco {
-    bottom: 197px;
-    left: 60px;
+    bottom: 180px;
+    left: 66px;
+    text-align: left;
 }
 .approach-arrow {
     top: -138px;
-    left: -154px;
+    left: -57px;
 }
 .fr-2ln {
     height: 5rem;

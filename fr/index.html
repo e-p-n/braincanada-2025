@@ -126,6 +126,10 @@
                 <p>Accélérer, intensifier et financer <br> 
                    la recherche sur le cerveau partout <br>
                    au Canada </p>
+                <div class="text-cover">
+                    <div class="gradient-cover"></div>
+                    <div class="solid-cover"></div>
+                </div>
             </div>
             <div class="message chair">
                 <h2>Message de la présidente</h2>
@@ -160,7 +164,7 @@
                     </div>
                     
                 </div>
-                <button class="more-less" id="chair-button" onclick="showHide('chair', 'small', 'Plus')">Plus ▼</span></button>
+                <button class="more-less hide-narrow" id="chair-button" onclick="showHide('chair', 'small', 'Plus')">Plus ▼</span></button>
 
             </div>
             <div class="quote chair">
@@ -168,8 +172,14 @@
                 Nous sommes à un moment crucial de l’histoire scientifique, sur le point de faire des découvertes majeures sur le cerveau qui amélioreront la vie des gens. La Fondation Brain Canada joue un rôle essentiel dans ces progrès, en tant que partenaire de confiance réunissant une communauté nationale de scientifiques, de cliniciens, de parties prenantes et de bailleurs de fonds. &raquo;</p>
                 <p class="quote-name-title">Naomi Azrieli, O.C., DPhil <br>
                 Présidente du conseil <br>
-                            d’administration de la Fondation <br>
-                            Brain Canada</p> 
+                d’administration de la Fondation <br>
+                Brain Canada</p>
+                
+                <div class="text-cover">
+                    <div class="gradient-cover"></div>
+                    <div class="solid-cover"></div>
+                </div>
+                
             </div>
             <div class="message ceo">
                 <h2>Message de la présidente-directrice générale</h2>
@@ -198,23 +208,27 @@
                                 <p>Cordialement,</p>
                                 
                                 <p>Viviane Poupon, Ph. D. <br>
-                            Présidente-directrice générale de <br>
-                            la Fondation Brain Canada</p> 
+                                Présidente-directrice générale de <br>
+                                la Fondation Brain Canada</p> 
                             </div>
 
                         </div>
 
                     </div>
 
-                <button class="more-less" id="ceo-button" onclick="showHide('ceo', 'small', 'Plus')">Plus ▼</span></button>
+                <button class="more-less hide-narrow" id="ceo-button" onclick="showHide('ceo', 'small', 'Plus')">Plus ▼</span></button>
 
             </div>
-            <div class="quote ceo">
+            <div class="quote ceo" id="ceo-quote">
                 <p> <div class="quote-mark-fr">&laquo;</div>
                     La Fondation Brain Canada favorise la création d’une plateforme de partenariat qui encourage la recherche scientifique audacieuse et rassemble les chercheurs, les donateurs et les communautés. Ensemble, nous accélérons les avancées dans le domaine de la santé cérébrale et transformons les découvertes en résultats concrets. &raquo;</p>
                     <p class="quote-name-title">Viviane Poupon, PhD <br>
                         Présidente-directrice générale de <br>
                         la Fondation Brain Canada</p> 
+                    <div class="text-cover">
+                        <div class="gradient-cover"></div>
+                        <div class="solid-cover"></div>
+                    </div>
             </div> 
             <div class="yir">
                 <h2>Bilan de l’année</h2>
@@ -421,7 +435,7 @@
                             prenantes
                         </p>
                         <p class="eco">
-                            Écosystème de la recherche sur le cerveau
+                            Écosystème de la <br class="hide-wide"> recherche le cerveau
                         </p>
                         <img class="approach-arrow" src="../src/img/approach-arrow.svg" alt="">
 
@@ -440,8 +454,8 @@
 
             <div class="research">
                 <h2>Travaux subventionnés</h2>
-                <div class="research-section open no-border" id="in-partners">
-                    <h3>Partenaires d’innovation <button class="more-less large-button" id="in-partners-button" onclick="showHide('in-partners', 'large', '')">△</button></h3>
+                <div class="research-section no-border" id="in-partners">
+                    <h3>Partenaires d’innovation <button class="more-less large-button" id="in-partners-button" onclick="showHide('in-partners', 'large', '')">▽</button></h3>
                         
                         <div class="wide-content">
                             <p>Les partenaires d’innovation comprennent des particuliers, des fondations privées, des entreprises donatrices et d’autres entités qui partagent la vision de la Fondation Brain Canada visant à repousser les limites des connaissances sur le cerveau. Par exemple, le programme Futurs leaders canadiens de la recherche sur le cerveau de la Fondation Brain Canada est rendu possible grâce à un don important de la Fondation Azrieli, avec le soutien d’autres donateurs. Grâce à cette générosité collective, la Fondation Brain Canada a octroyé 109 subventions et investi plus de 10,9 millions de dollars depuis 2019 dans le financement de démarrage destiné aux chercheurs en début de carrière, les aidant ainsi à poursuivre leurs idées audacieuses.</p>
@@ -662,19 +676,27 @@
                     <p class="donor-quote-name-title"><span class="bold">Mireille et Murray Steinberg</span> <br>
                     Fondation de la famille Mireille et Murray Steinberg    
                     </p>
+                    <div class="text-cover">
+                        <div class="gradient-cover"></div>
+                        <div class="solid-cover"></div>
+                    </div>
+                    
                 </div>
 
                 </div>
 
           
             </div>
-            <button class="more-less hide-wide donor-button" id="donor-list-button" onclick="showHide('donor-list', 'small', 'long')">Donateurs pour la période du 1<sup>er</sup>&nbsp;avril&nbsp;2024&nbsp;au&nbsp;31&nbsp;mars&nbsp;2025 ▼</button>
-            <div class="donor-quote hide-wide">
+            <div class="donor-quote hide-wide" id="don-quote">
                 <p> <div class="quote-mark-fr">&laquo;</div>
                 Un jour, Warren Buffet a dit : « Quelqu’un s’assoit à l’ombre aujourd’hui parce que quelqu’un d’autre a planté un arbre il y a longtemps. » De même, notre famille investit aujourd’hui dans la recherche, convaincue que cela portera ses fruits demain.&nbsp;&raquo;</p>
                 <p class="donor-quote-name-title"><span class="bold">Mireille et Murray Steinberg</span> <br>
                 Fondation de la famille Mireille et Murray Steinberg    
                 </p>
+                <div class="text-cover">
+                    <div class="gradient-cover"></div>
+                    <div class="solid-cover"></div>
+                </div>
             </div>
 
         </div>
