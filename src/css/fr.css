@@ -92,17 +92,17 @@
         left: -432px;  
     } 
     .found {
-        bottom: 300px;
+        bottom: 296px;
         text-align: left;
-        left: -398px;  
+        left: -396px;  
     }
     .nation {
-        bottom: 458px;
-        left: 20px;  
+        bottom: 472px;
+        left: 24px;  
     } 
     .prov {
         bottom: 520px;
-        left: -203px;  
+        left: -196px;  
     } 
     .pharma {
         bottom: 582px;
@@ -112,18 +112,18 @@
     .stake {
         bottom: 642px;
         text-align: left;
-        left: -332px;
+        left: -326px;
     }
     .eco {
-        bottom: 739px;
+        bottom: 740px;
         text-align: left;
-        left: 90px;
+        left: 117px;
     }
 
 
     .approach-arrow {
         top: -466px;
-        left: 368px;
+        left: 400px;
         rotate: -90deg;
 
     }
