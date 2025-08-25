@@ -82,12 +82,10 @@ const yirObserver = new IntersectionObserver(entries => {
 
 
 const finObserver = new IntersectionObserver(entries => {
-    var i = 1
     entries.forEach(entry => {
-        if(entry.isIntersecting && i < 2) {
+        if(entry.isIntersecting) {
             entry.target.classList.add('finance-arrows');
         }
-        i++;
     })
 
 })
@@ -97,5 +95,9 @@ const finObserver = new IntersectionObserver(entries => {
 yirObserver.observe(document.querySelector('.yir-covers'));
 yirObserver.observe(document.querySelector('.approach-diagram'));
 yirObserver.observe(document.querySelector('.animation-item'));
+yirObserver.observe(document.querySelector('.quote'));
+yirObserver.observe(document.querySelector('.vision-mission'));
+yirObserver.observe(document.querySelector('#ceo-quote'));
+
 finObserver.observe(document.querySelector('.financials'));
 

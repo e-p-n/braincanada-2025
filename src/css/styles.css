@@ -237,6 +237,8 @@ padding: 0;
     color: white;
     font-weight: 200;
     max-width: var(--max-width);
+    position: relative;
+    overflow: hidden;
 }
 .vision-mission h2 {
     color:var(--color-8);
@@ -246,12 +248,54 @@ padding: 0;
     font-size:1.7rem;    
     line-height: 1.2em;
 }
+
 .vision-mission p {
     padding: 0;
     margin: 0 0 40px 0;
     font-size: 1.7rem;
     line-height: 1.2em;
 }
+.text-cover {
+    position: absolute;
+    width: 100%;
+    height:60rem;
+    top: -30rem;
+    display: flex;
+    flex-direction: column;
+}
+.animate .text-cover {
+    animation: fade-up 5s linear forwards 1;
+}
+.solid-cover {
+    background-color: var(--color-1);
+    width: 100%;
+    height: 30rem;
+
+}
+.gradient-cover {
+    display: block;
+    width: 100%;
+    height: 30rem;
+    background: linear-gradient(180deg, transparent 0, var(--color-1) 100%);
+}
+
+@keyframes fade-up {
+    to {
+        top:100rem;
+    }
+}
+
+
+@keyframes stretch-text {
+    to {
+        height: auto;
+    }
+}
+.vision-mission .animate h2 {
+    animation: stretch-text 1000ms linear forwards 1;
+
+}
+
 .message {
     max-width: var(--max-width);
     padding: var(--standard-padding) var(--standard-padding) calc(var(--standard-padding) *2);
@@ -286,6 +330,8 @@ padding: 0;
     background-color: var(--color-1);
     padding: var(--standard-padding);
     max-width: var(--max-width);
+    position: relative;
+    overflow: hidden;
 
 }
 
